@@ -602,7 +602,7 @@ textarea {
 		clear: both !important;
 		margin-left: 20;
 		margin-right: 20;
-		padding: 0;
+		padding: 10;
 	}
 
 	[class*="col-"] + [class*="col-"].end {
