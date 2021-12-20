@@ -1848,7 +1848,7 @@ header .logo a {
 	margin-bottom: 0;
 }
 #portfolio .folio-types {
-	margin: 0;
+	margin: 20;
 	padding: 0;
 	text-transform: uppercase;
 	font-family: "poppins-regular", sans-serif;
