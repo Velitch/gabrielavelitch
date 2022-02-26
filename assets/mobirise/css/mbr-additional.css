@@ -2166,64 +2166,52 @@ a {
     left: -1rem;
   }
 }
-.cid-sYsI6XoUQ0 {
-  padding-top: 3rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
-}
-.cid-sYsI6XoUQ0 .mbr-section-subtitle {
-  color: #75addb;
-}
-.cid-sYxRum6yff {
-  padding-top: 2rem;
+.cid-sYziZKN79U {
+  padding-top: 6rem;
   padding-bottom: 2rem;
+  background-image: url("../../../assets/images/intro-bg-2000x1125.jpg");
+}
+.cid-sYziZKN79U .mbr-text,
+.cid-sYziZKN79U .mbr-section-btn {
+  color: #232323;
+}
+.cid-sYziZKN79U .card-title,
+.cid-sYziZKN79U .card-box {
+  color: #ffffff;
+}
+.cid-sYziZKN79U .mbr-text,
+.cid-sYziZKN79U .link-wrap {
+  color: #ffffff;
+}
+.cid-sYzj9koTFS {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   background-color: #ffffff;
 }
-.cid-sYxRum6yff .counter-container ul {
-  margin: 0;
-  list-style: none;
-  padding-left: 2.5rem;
+.cid-sYzj9koTFS .card .card-header {
+  background-color: transparent;
+  margin-bottom: 0;
 }
-.cid-sYxRum6yff .counter-container ul li {
-  margin-bottom: 1rem;
-  position: relative;
+.cid-sYzj9koTFS .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.cid-sYxRum6yff .counter-container ul li:before {
-  position: absolute;
-  left: -1.6rem;
-  content: "\2022";
+.cid-sYzj9koTFS .mbr-iconfont {
+  padding-left: 1rem;
+  font-family: 'Moririse2' !important;
+  font-size: 1.4rem !important;
   color: #75addb;
-  font-weight: bold;
-  font-size: 2rem;
-  width: 1.6rem;
-  line-height: 1.2;
 }
-.cid-sYxRum6yff .mbr-section-title {
+.cid-sYzj9koTFS .panel-body,
+.cid-sYzj9koTFS .card-header {
+  padding: 1rem 0;
+}
+.cid-sYzj9koTFS .panel-title-edit {
+  color: #000000;
+}
+.cid-sYzj9koTFS .panel-text {
   text-align: left;
-}
-.cid-sYxRTzX0p9 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #ffffff;
-}
-.cid-sYxRTzX0p9 .counter-container ul {
-  margin: 0;
-  list-style: none;
-  padding-left: 2.5rem;
-}
-.cid-sYxRTzX0p9 .counter-container ul li {
-  margin-bottom: 1rem;
-  position: relative;
-}
-.cid-sYxRTzX0p9 .counter-container ul li:before {
-  position: absolute;
-  left: -1.6rem;
-  content: "\2022";
-  color: #75addb;
-  font-weight: bold;
-  font-size: 2rem;
-  width: 1.6rem;
-  line-height: 1.2;
 }
 .cid-sYsmn2ZqhN {
   padding-top: 2rem;
