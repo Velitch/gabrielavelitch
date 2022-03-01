@@ -82,23 +82,45 @@
 
 
                 <p class="mbr-text mbr-fonts-style display-7">
-                  <strong>State Variable Filter</strong> - this filter implements some onepole filters correlated between them that produce lowpass, highpass, bandpass, and notch output simultaneously.</p>
+                  <strong>Finite Impulse Response</strong> - the direct signal “feeds forward” around the delay line. The output is a linear combination of the direct and delayed signal. The FIR filter is one instance of a comb filter.</p>
+
+                  <section data-bs-version="5.1" class="image3 cid-sYxSA7pHRT" id="image3-1c">
+                      <div class="container">
+                          <div class="row justify-content-center">
+                              <div class="col-12 col-lg-6">
+                                  <div class="image-wrapper">
+                                      <img src="https://www.gabrielavelitch.com/assets/images/diagrams/fir.png" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
+<p class="mbr-text mbr-fonts-style display-7">The general structure of a feedforward comb filter is described by the difference equation:</p>
+
+                  <section data-bs-version="5.1" class="image3 cid-sYxSA7pHRT" id="image3-1c">
+                      <div class="container">
+                          <div class="row justify-content-center">
+                              <div class="col-12 col-lg-6">
+                                  <div class="image-wrapper">
+                                      <img src="https://www.gabrielavelitch.com/assets/images/diagrams/formula_fir.png" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+<p class="mbr-text mbr-fonts-style display-7">where K is the delay length (measured in samples), and α is a scaling factor applied to the delayed signal.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section data-bs-version="5.1" class="image3 cid-sYxSA7pHRT" id="image3-1c">
-
-
-
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6">
                 <div class="image-wrapper">
                     <img src="https://www.gabrielavelitch.com/assets/images/maxmsp/comb_fir.gif" alt="">
-
                 </div>
             </div>
         </div>
@@ -106,7 +128,6 @@
 </section>
 
 <section data-bs-version="5.1" class="content11 cid-sYxUmQ9Po6" id="content11-1e">
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
