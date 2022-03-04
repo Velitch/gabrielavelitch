@@ -1,0 +1,88 @@
+//=====================================
+//=====================================
+// MATHS LIBRARY
+// by Gabriela Krassimirova Velitchkova
+// 2022
+//=====================================
+//=====================================
+//               CONTENT
+//=====================================
+//=====================================
+// 1. OSCILLATORS
+//  1.1. PHASOR
+//  1.2. CYCLE
+//
+// 2. CONVERTORS
+//  2.1. FREQUENCY TO MILLISECOND (fq2ms)
+//  2.2. MILLISECOND TO FREQUENCY (ms2fq)
+//  2.3. FREQUENCY TO SAMPLE (fq2samp)
+//=====================================
+//=====================================
+// 1. OSCILLATORS
+//=====================================
+//  1.1. PHASOR
+//=====================================
+
+phasor(fq)
+{
+History count(0);
+length = samplerate/fq;
+count = count + 1;
+
+Yn = (count % length)/length;
+
+	return Yn;
+}
+
+//=====================================
+//  1.2. CYCLE
+//=====================================
+
+cycle(fq)
+{
+History count(0);
+length = samplerate/fq;
+count = count + 1;
+phasor = (count % length)/length;
+
+Yn = cos(2*pi*phasor(fq));
+
+	return Yn;
+}
+
+//=====================================
+//=====================================
+// 2. CONVERTORS
+//=====================================
+//  2.1. FREQUENCY TO MILLISECOND
+//=====================================
+
+fq2ms(fq)
+{
+Yn = samplerate/(samplerate*(fq/1000.));
+
+  return Yn;
+}
+
+//=====================================
+//  2.2. MILLISECOND TO FREQUENCY
+//=====================================
+
+ms2fq(ms)
+{
+Yn = (1000./(ms)*samplerate)/samplerate;
+
+  return Yn;
+}
+
+//=====================================
+//  2.3. FREQUENCY TO SAMPLE
+//=====================================
+
+fq2samp(fq)
+{
+fq2ms = samplerate/(samplerate*(fq/1000.));
+Yn = (fq2ms*(samplerate/1000.));
+
+  return Yn;
+}

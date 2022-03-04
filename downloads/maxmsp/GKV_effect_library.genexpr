@@ -1,0 +1,87 @@
+//=====================================
+//=====================================
+// EFFECTS LIBRARY
+// by Gabriela Krassimirova Velitchkova
+// 2022
+//=====================================
+//=====================================
+//               CONTENT
+//=====================================
+//=====================================
+// 1. EFFECTS
+//  1.1. FLANGER
+//=====================================
+//=====================================
+// 1. EFFECTS
+//=====================================
+//  1.1. FLANGER
+//=====================================
+
+flanger (Xn, fq, val1, val2, amp, freqcut)
+
+{
+
+Delay delay_1(samplerate);
+Delay delay_2(samplerate);
+Delay delay_3(samplerate);
+Delay delay_4(samplerate);
+History history_1(0);
+
+//LFO
+History count(0);
+length = samplerate/fq;
+count = count + 1;
+phasor = (count % length)/length; //phasor
+
+cycle = (cos(2*pi*phasor(fq))); //cycle
+
+lfo = (((cycle+1.)*0.5)*val1)+val2;
+
+//COMB
+
+del_time = lfo * (samplerate/1000.);
+
+g = clamp(amp, 0., 0.9999);
+
+delay1 = delay_1.read(del_time) * g;
+
+feedback = Xn + delay1;
+
+//LOWPASS
+
+omega = ((freqcut * twopi)) / samplerate;
+cosw = cos(omega);
+cosq = cosw * cosw;
+alpha = (cosw - 1.) + (sqrt((cosq - (4. * cosw)) + 3.));
+mul_1 = (1. - alpha) * history_1;
+
+  LP = mul_1 + (feedback * alpha);
+
+//ALLPASS1
+
+menog = (-1.) * gain;
+allpass = (delay_2.read(del_time)) * menog;
+
+  all1 = (delay_2.read(del_time)) + (allpass + LP);
+
+//ALLPASS2
+
+allpass2 = (delay_3.read(del_time)) * menog;
+
+  all2 = (delay_3.read(del_time)) + (allpass2 + all1);
+
+  //ALLPASS3
+
+  allpass3 = (delay_4.read(del_time)) * menog;
+
+    Yn = (delay_4.read(del_time)) + (allpass3 + all2);
+
+history_1_2 = fixdenorm(LP);
+history_1 = history_1_2;
+delay_1.write(feedback);
+delay_2.write(allpass + LP);
+delay_3.write(allpass2 + all1);
+delay_4.write(allpass3 + all2);
+
+    return Yn;
+}
