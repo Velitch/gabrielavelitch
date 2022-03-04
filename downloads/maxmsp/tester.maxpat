@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 119.0, 147.0, 764.0, 476.0 ],
+		"rect" : [ 119.0, 146.0, 764.0, 476.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 41.0, 208.0, 100.0, 40.0 ],
+					"preset_data" : [ 						{
+							"number" : 1,
+							"data" : [ 5, "obj-10", "flonum", "float", 3.0, 5, "obj-5", "flonum", "float", 0.899999976158142, 5, "obj-7", "flonum", "float", 0.930000007152557, 5, "obj-9", "playlist~", "preset_count", 1, 7, "obj-9", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-9", "playlist~", "preset_clipstate", 1, "absolutepath", "FemVoice.aif", 7, "obj-9", "playlist~", "preset_clipstate", 1, "filename", "FemVoice.aif", 7, "obj-9", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-9", "playlist~", "preset_clipstate", 1, "selection", 0.0, 1.0, 7, "obj-9", "playlist~", "preset_clipstate", 1, "id", "u126007913", 7, "obj-9", "playlist~", "preset_content", 1, "loop", 1, 4, "obj-9", "playlist~", "preset_execute", 5, "obj-11", "flonum", "float", 5973.0, 5, "<invalid>", "flonum", "float", 1.0, 5, "obj-29", "flonum", "float", 1.399999976158142, 5, "<invalid>", "flonum", "float", 287.0 ]
+						}
+, 						{
+							"number" : 2,
+							"data" : [ 5, "obj-10", "flonum", "float", 1.179999947547913, 5, "obj-5", "flonum", "float", 0.899999976158142, 5, "obj-7", "flonum", "float", 0.930000007152557, 5, "obj-9", "playlist~", "preset_count", 1, 7, "obj-9", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-9", "playlist~", "preset_clipstate", 1, "absolutepath", "FemVoice.aif", 7, "obj-9", "playlist~", "preset_clipstate", 1, "filename", "FemVoice.aif", 7, "obj-9", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-9", "playlist~", "preset_clipstate", 1, "selection", 0.0, 1.0, 7, "obj-9", "playlist~", "preset_clipstate", 1, "id", "u126007913", 7, "obj-9", "playlist~", "preset_content", 1, "loop", 1, 4, "obj-9", "playlist~", "preset_execute", 5, "obj-11", "flonum", "float", 5973.0, 5, "<invalid>", "flonum", "float", 1.0, 5, "obj-29", "flonum", "float", 1.399999976158142, 5, "<invalid>", "flonum", "float", 287.0 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-10", "flonum", "float", 1.179999947547913, 5, "obj-5", "flonum", "float", 2.400000095367432, 5, "obj-7", "flonum", "float", 0.930000007152557, 5, "obj-9", "playlist~", "preset_count", 1, 7, "obj-9", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-9", "playlist~", "preset_clipstate", 1, "absolutepath", "FemVoice.aif", 7, "obj-9", "playlist~", "preset_clipstate", 1, "filename", "FemVoice.aif", 7, "obj-9", "playlist~", "preset_clipstate", 1, "loop", 1, 8, "obj-9", "playlist~", "preset_clipstate", 1, "selection", 0.0, 1.0, 7, "obj-9", "playlist~", "preset_clipstate", 1, "id", "u126007913", 7, "obj-9", "playlist~", "preset_content", 1, "loop", 1, 4, "obj-9", "playlist~", "preset_execute", 5, "obj-11", "flonum", "float", 5973.0, 5, "<invalid>", "flonum", "float", 1.0, 5, "obj-29", "flonum", "float", 1.399999976158142, 5, "<invalid>", "flonum", "float", 287.0 ]
+						}
+ ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-29",
 					"maxclass" : "flonum",
@@ -63,49 +87,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 509.0, 197.0, 130.0, 130.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 358.0, 197.0, 130.0, 130.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 203.0, 197.0, 130.0, 130.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-2",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 580.0, 37.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"format" : 6,
 					"id" : "obj-11",
 					"maxclass" : "flonum",
@@ -122,10 +103,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Cistern.wav",
-								"filename" : "Cistern.wav",
+								"absolutepath" : "FemVoice.aif",
+								"filename" : "FemVoice.aif",
 								"filekind" : "audiofile",
-								"id" : "u742007859",
+								"id" : "u126007913",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
@@ -163,7 +144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 102.0, 280.0, 513.0, 171.0 ]
+					"patching_rect" : [ 196.0, 271.0, 513.0, 171.0 ]
 				}
 
 			}
@@ -173,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 111.0, 189.0, 35.0, 22.0 ],
+					"patching_rect" : [ 224.0, 191.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -183,6 +164,8 @@
 					"format" : 6,
 					"id" : "obj-7",
 					"maxclass" : "flonum",
+					"maximum" : 0.999,
+					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -256,7 +239,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 604.0, 142.0, 130.0, 130.0 ]
+					"patching_rect" : [ 293.5, 142.0, 130.0, 130.0 ]
 				}
 
 			}
@@ -264,9 +247,9 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 6,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 196.0, 118.0, 161.0, 22.0 ],
 					"text" : "gen~ gkv_phasor"
 				}
@@ -313,13 +296,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 6 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 3 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -348,9 +324,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Cistern.wav",
-				"bootpath" : "C74:/packages/HoaLibrary-Win-v2.2/media",
-				"type" : "WAVE",
+				"name" : "FemVoice.aif",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/samples",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
