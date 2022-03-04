@@ -60,7 +60,7 @@ mul_1 = (1. - alpha) * history_1;
 
 //ALLPASS1
 
-menog = (-1.) * gain;
+menog = (-1.);
 allpass = (delay_2.read(del_time)) * menog;
 
   all1 = (delay_2.read(del_time)) + (allpass + LP);
@@ -133,7 +133,7 @@ mul_1 = (1. - alpha) * history_1;
 
 //ALLPASS1
 
-menog = (-1.) * gain;
+menog = (-1.);
 allpass = (delay_2.read(del_time)) * menog;
 
   all1 = (delay_2.read(del_time)) + (allpass + LP);
