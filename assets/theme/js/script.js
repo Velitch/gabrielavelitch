@@ -61,7 +61,7 @@ else document.querySelectorAll(".pie_progress").length&&("undefined"!==typeof Ci
 $(function () {
   var includes = $('[data-include]')
   $.each(includes, function () {
-    var file = 'assets/internals/' + $(this).data('include') + '.html'
+    var file = 'https://www.gabrielavelitch.com/assets/internals/' + $(this).data('include') + '.html'
     $(this).load(file)
   })
 })
