@@ -40,7 +40,14 @@
 </head>
 <body>
 
-<div data-include="gkv_nav"></div>
+      <div id="include"></div>
+      <script>
+          window.onload = function(){
+              $.get("https://www.gabrielavelitch.com/assets/internals/gkv_nav.html", function(data){
+                  $("#include").html(data);
+              })
+          }
+      </script>
 
 <section data-bs-version="5.1" class="info3 cid-sYzbPCvQ7r mbr-parallax-background" id="info3-1g">
     <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);">
@@ -155,6 +162,8 @@
  <script src="https://www.gabrielavelitch.com/assets/dropdown/js/navbar-dropdown.js"></script>
  <script src="https://www.gabrielavelitch.com/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
  <script src="https://www.gabrielavelitch.com/assets/theme/js/script.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
   </body>
 </html>
