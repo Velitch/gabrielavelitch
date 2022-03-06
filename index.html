@@ -36,17 +36,18 @@
   <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
 
 
+  <script>
+      window.onload = function(){
+          $.get("https://www.gabrielavelitch.com/assets/internals/gkv_nav.html", function(data){
+              $("#gkv_nav").html(data);})}
+  </script>
+
 
 </head>
 <body>
 
 <!-- Navbar-->
   <div id="gkv_nav"></div>
-  <script>
-      window.onload = function(){
-          $.get("https://www.gabrielavelitch.com/assets/internals/gkv_nav.html", function(data){
-              $("#gkv_nav").html(data);})}
-  </script>
 
 
 <section data-bs-version="5.1" class="header13 cid-sYsm6ZTLsK mbr-fullscreen mbr-parallax-background" id="header13-1">
