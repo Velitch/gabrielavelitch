@@ -57,33 +57,3 @@ if(n){if(!t)return;e(document).on("add.cards",function(a){e(a.target).find(".for
 e(this).datetimepicker({format:"H:i",datepicker:!1})}))})}document.querySelectorAll('input[type="range"]').forEach(function(a){a.addEventListener("change",function(a){a.target.parents(".form-group").forEach(function(b){b.querySelector(".value").innerHTML=a.target.value})})});if(n)e(document).on("add.cards changeParameter.cards",function(a,b){"undefined"!==typeof CircularProgressBar&&new CircularProgressBar("pie_progress");b?H(a.target,b):a.target.querySelectorAll(".pie_progress").length&&a.target.querySelectorAll(".pie_progress").forEach(function(a){D(a)})});
 else document.querySelectorAll(".pie_progress").length&&("undefined"!==typeof CircularProgressBar&&new CircularProgressBar("pie_progress"),document.querySelectorAll(".pie_progress").forEach(function(a){D(a)}));if(n&&t)e(document).on("add.cards",function(a){e(a.target).hasClass("testimonials-slider")&&y(a.target)}).on("changeParameter.cards",function(a,b,c){"testimonialsSlides"===b&&0==e(a.target).find(".carousel-item.active").length&&B(a.target)});else"undefined"===typeof window.initTestimonialsPlugin&&
 (window.initTestimonialsPlugin=!0,document.querySelectorAll(".testimonials-slider").forEach(function(a){y(a)}))})();document.getElementsByTagName("body")[0].setAttribute("style","z-index: 0");!function(){try{document.getElementsById("top-1")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.style="display: none";a.innerHTML='<a href="https://mobirise.in">Mobirise</a> Mobirise v5.6.0';document.body.insertBefore(a,document.body.childNodes[0])}}();
-
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
-  }
-}
-</script>
