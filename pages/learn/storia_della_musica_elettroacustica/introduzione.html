@@ -2,13 +2,13 @@
 <html>
 <head>
 
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MB26WWVES"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-0MB26WWVES');
 </script>
 
@@ -35,19 +35,43 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap"></noscript>
   <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
 
+  <!-- include internals -->
+  <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+  </script>
 
-
-</head>
 <body>
 
 
   <!-- Navbar-->
-    <div id="include"></div>
-    <script>
-        window.onload = function(){
-            $.get("https://www.gabrielavelitch.com/assets/internals/gkv_nav.html", function(data){
-                $("#include").html(data);})}
-    </script>
+<div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_nav.html"></div>
+
 
 
 <section data-bs-version="5.1" class="video4 cid-sZfnzA3tRW" id="video4-25">
@@ -93,7 +117,9 @@
    <script src="https://www.gabrielavelitch.com/assets/dropdown/js/navbar-dropdown.js"></script>
    <script src="https://www.gabrielavelitch.com/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
    <script src="https://www.gabrielavelitch.com/assets/theme/js/script.js"></script>
-
+   <script>
+   includeHTML();
+   </script>
 
   </body>
 </html>
