@@ -2,21 +2,13 @@
 <html>
 <head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0MB26WWVES"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0MB26WWVES');
-</script>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="https://www.gabrielavelitch.com/assets/images/favicon-96x96.png" type="image/x-icon">
-  <meta name="description" content="">
+  <!-- Header-->
+    <div id="include"></div>
+    <script>
+        window.onload = function(){
+            $.get("https://www.gabrielavelitch.com/assets/internals/gkv_header.html", function(data){
+                $("#include").html(data);})}
+    </script>
 
 
   <title>Home</title>
