@@ -2,13 +2,21 @@
 <html>
 <head>
 
-  <!-- Header-->
-    <div id="include"></div>
-    <script>
-        window.onload = function(){
-            $.get("https://www.gabrielavelitch.com/assets/internals/gkv_header.html", function(data){
-                $("#include").html(data);})}
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0MB26WWVES"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0MB26WWVES');
+</script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://www.gabrielavelitch.com/assets/images/favicon-96x96.png" type="image/x-icon">
+  <meta name="description" content="">
 
 
   <title>Home</title>
@@ -33,11 +41,11 @@
 <body>
 
 <!-- Navbar-->
-  <div id="include"></div>
+  <div id="gkv_nav"></div>
   <script>
       window.onload = function(){
           $.get("https://www.gabrielavelitch.com/assets/internals/gkv_nav.html", function(data){
-              $("#include").html(data);})}
+              $("#gkv_nav").html(data);})}
   </script>
 
 
@@ -265,13 +273,13 @@
 
 
 <!-- Footer-->
-  <div id="include"></div>
+  <div id="gkv_footer"></div>
   <script>
       window.onload = function(){
           $.get("https://www.gabrielavelitch.com/assets/internals/gkv_footer.html", function(data){
-              $("#include").html(data);})}
+              $("#gkv_footer").html(data);})}
   </script>
-
+</section>
 
 <section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/m" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Designed with <a href="https://mobirise.site/b" style="color:#aaa;">Mobirise</a> site themes</p></section>
 
