@@ -36,25 +36,12 @@
   <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
 
 
-  <script>
-      window.onload = function(){
-          $.get("https://www.gabrielavelitch.com/assets/internals/gkv_footer.html", function(data){
-              $("#gkv_footer").html(data);})}
-  </script>
 
-  <script>
-      window.onload = function(){
-          $.get("https://www.gabrielavelitch.com/assets/internals/gkv_nav.html", function(data){
-              $("#gkv_nav").html(data);})}
-  </script>
-
-
-</head>
 <body>
 
 
   <!-- Footer-->
-    <div id="gkv_nav"></div>
+<div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_nav.html"></div>
 
 
 <section data-bs-version="5.1" class="header13 cid-sYsm6ZTLsK mbr-fullscreen mbr-parallax-background" id="header13-1">
@@ -281,7 +268,7 @@
 
 
 <!-- Footer-->
-  <div id="gkv_footer"></div>
+<div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_footer.html"></div>
 
 </section>
 
