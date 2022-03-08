@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 27.0, 84.0, 1468.0, 705.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -153,8 +153,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1083.0, 36.0, 70.0, 22.0 ],
-					"text" : "loadmess 9"
+					"patching_rect" : [ 1083.0, 36.0, 80.0, 22.0 ],
+					"text" : "loadmess 1.3"
 				}
 
 			}
@@ -598,20 +598,6 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 410.0, 567.0, 29.5, 22.0 ],
 					"text" : "*~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-32",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1116.0, 458.0, 48.0, 20.0 ],
-					"text" : "BANG!",
-					"textcolor" : [ 0.6, 0.0, 0.27843137254902, 1.0 ],
-					"textjustification" : 1
 				}
 
 			}
@@ -1147,7 +1133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 5.0, 393.0, 29.0 ],
-					"text" : "SINTESI ADDITIVA",
+					"text" : "WEEK 1",
 					"textcolor" : [ 0.458823529411765, 0.67843137254902, 0.858823529411765, 1.0 ],
 					"textjustification" : 1
 				}
