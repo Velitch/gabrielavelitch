@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 27.0, 27.0, 1323.0, 735.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,37 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 918.5, 459.0, 228.0, 20.0 ],
-					"text" : "carica messaggio all'apertura della patch"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 835.0, 458.0, 84.0, 22.0 ],
-					"text" : "loadmess -70."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 36.0, 382.0, 20.0 ],
+					"patching_rect" : [ 0.0, 30.0, 382.0, 20.0 ],
 					"text" : "Per avviare la patch attivare il toggle on/off alzare il livello del master.",
-					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ],
-					"textjustification" : 1
+					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ]
 				}
 
 			}
@@ -93,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 719.0, 605.0, 55.0, 20.0 ],
+					"patching_rect" : [ 719.0, 591.0, 55.0, 20.0 ],
 					"text" : "ON/OFF"
 				}
 
@@ -104,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 823.0, 642.0, 151.0, 20.0 ],
+					"patching_rect" : [ 823.0, 628.0, 151.0, 20.0 ],
 					"text" : "Digital to Analog Converter"
 				}
 
@@ -115,7 +91,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 835.0, 491.0, 103.0, 20.0 ],
+					"patching_rect" : [ 835.0, 477.0, 103.0, 20.0 ],
 					"text" : "gain master (dB)"
 				}
 
@@ -150,8 +126,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 5.0, 382.0, 29.0 ],
-					"text" : "OSCILLATORE SINUSOIDALE",
+					"patching_rect" : [ 0.0, -1.0, 382.0, 29.0 ],
+					"text" : "INVILUPPO",
 					"textcolor" : [ 0.458823529411765, 0.67843137254902, 0.858823529411765, 1.0 ],
 					"textjustification" : 1
 				}
@@ -320,7 +296,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 689.0, 603.0, 24.0, 24.0 ]
+					"patching_rect" : [ 689.0, 589.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -333,7 +309,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 783.0, 491.0, 48.0, 136.0 ],
+					"patching_rect" : [ 783.0, 477.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -356,7 +332,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 783.0, 640.0, 35.0, 22.0 ],
+					"patching_rect" : [ 783.0, 626.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -408,7 +384,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, -1.0, 382.0, 84.0 ],
+					"patching_rect" : [ 0.0, -1.0, 382.0, 82.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -426,13 +402,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}

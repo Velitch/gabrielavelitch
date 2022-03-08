@@ -64,11 +64,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 36.0, 382.0, 20.0 ],
-					"text" : "Per avviare la patch attivare il toggle on/off alzare il livello del master.",
+					"patching_rect" : [ 0.0, 36.0, 382.0, 34.0 ],
+					"text" : "Per avviare la patch attivare il toggle on/off e alzare il livello del master.",
 					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ],
 					"textjustification" : 1
 				}
