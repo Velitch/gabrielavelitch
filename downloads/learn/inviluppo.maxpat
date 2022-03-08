@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 41.0, 84.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -200,8 +200,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 58.404255319148973, 1.0, 0, 0.0, 132.382978723404392, 0.706666666666667, 0, 0.0, 619.085106382979575, 0.693333333333333, 0, 0.0, 732.000000000002387, 0.0, 0, 0.0 ],
-					"domain" : 732.0,
+					"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 79.787234042553237, 1.0, 0, 0.0, 180.851063829787421, 0.706666666666667, 0, 0.0, 845.744680851064913, 0.693333333333333, 0, 0.0, 1000.000000000003183, 0.0, 0, 0.0 ],
 					"id" : "obj-15",
 					"maxclass" : "function",
 					"mode" : 1,
@@ -210,31 +209,6 @@
 					"outlettype" : [ "float", "", "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1053.0, 263.0, 200.0, 100.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 30.0, 382.0, 20.0 ],
-					"text" : "Per avviare la patch attivare il toggle on/off alzare il livello del master.",
-					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "jweb",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 80.0, 382.0, 706.0 ],
-					"rendermode" : 0,
-					"url" : "https://www.gabrielavelitch.com/pages/learn/laboratorio_di_tecnologie_musicali#features20-2c.html"
 				}
 
 			}
@@ -279,21 +253,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1023.0, 80.0, 77.0, 20.0 ],
 					"text" : "tastiera MIDI"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 20.0,
-					"id" : "obj-5",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, -1.0, 382.0, 29.0 ],
-					"text" : "INVILUPPO",
-					"textcolor" : [ 0.458823529411765, 0.67843137254902, 0.858823529411765, 1.0 ],
-					"textjustification" : 1
 				}
 
 			}
@@ -490,6 +449,47 @@
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 36.0, 393.0, 20.0 ],
+					"text" : "Per avviare la patch attivare il toggle on/off e premere BANG!",
+					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 0.0, 80.0, 393.0, 622.0 ],
+					"rendermode" : 0,
+					"url" : "https://www.gabrielavelitch.com/pages/learn/laboratorio_di_tecnologie_musicali#features20-2c.html"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 20.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 5.0, 393.0, 29.0 ],
+					"text" : "INVILUPPO",
+					"textcolor" : [ 0.458823529411765, 0.67843137254902, 0.858823529411765, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"angle" : 270.0,
 					"grad1" : [ 0.058823529411765, 0.058823529411765, 0.058823529411765, 1.0 ],
 					"grad2" : [ 0.058823529411765, 0.058823529411765, 0.058823529411765, 1.0 ],
@@ -498,7 +498,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, -1.0, 382.0, 82.0 ],
+					"patching_rect" : [ 0.0, -1.0, 393.0, 84.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}

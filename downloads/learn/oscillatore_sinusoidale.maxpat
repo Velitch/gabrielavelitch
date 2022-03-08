@@ -64,11 +64,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 36.0, 382.0, 34.0 ],
+					"patching_rect" : [ 0.0, 36.0, 393.0, 20.0 ],
 					"text" : "Per avviare la patch attivare il toggle on/off e alzare il livello del master.",
 					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ],
 					"textjustification" : 1
@@ -82,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 80.0, 382.0, 706.0 ],
+					"patching_rect" : [ 0.0, 80.0, 393.0, 622.0 ],
 					"rendermode" : 0,
 					"url" : "https://www.gabrielavelitch.com/pages/learn/laboratorio_di_tecnologie_musicali#features20-2c.html"
 				}
@@ -151,7 +150,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 5.0, 382.0, 29.0 ],
+					"patching_rect" : [ 0.0, 5.0, 393.0, 29.0 ],
 					"text" : "OSCILLATORE SINUSOIDALE",
 					"textcolor" : [ 0.458823529411765, 0.67843137254902, 0.858823529411765, 1.0 ],
 					"textjustification" : 1
@@ -409,7 +408,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, -1.0, 382.0, 84.0 ],
+					"patching_rect" : [ 0.0, -1.0, 393.0, 84.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
