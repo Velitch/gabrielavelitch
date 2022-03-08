@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 27.0, 84.0, 1468.0, 705.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,35 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 0.0, 0.0, 368.0, 706.0 ],
+					"rendermode" : 0,
+					"url" : "https://www.gabrielavelitch.com/pages/learn/laboratorio_di_tecnologie_musicali#features20-2c.html"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 379.5, 72.5, 176.0, 20.0 ],
+					"text" : "https://www.gabrielavelitch.com"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 673.0, 583.0, 55.0, 20.0 ],
+					"patching_rect" : [ 837.0, 603.0, 55.0, 20.0 ],
 					"text" : "ON/OFF"
 				}
 
@@ -55,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 777.0, 620.0, 151.0, 20.0 ],
+					"patching_rect" : [ 941.0, 640.0, 151.0, 20.0 ],
 					"presentation_linecount" : 2,
 					"text" : "Digital to Analog Converter"
 				}
@@ -67,7 +91,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 66.0, 282.0, 20.0 ],
+					"patching_rect" : [ 379.5, 50.0, 282.0, 20.0 ],
 					"text" : "LABORATORIO DI TECNOLOGIE MUSICALI 2022"
 				}
 
@@ -78,7 +102,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 789.0, 469.0, 103.0, 20.0 ],
+					"patching_rect" : [ 953.0, 489.0, 103.0, 20.0 ],
 					"text" : "gain master (dB)"
 				}
 
@@ -89,7 +113,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 868.0, 335.0, 228.0, 20.0 ],
+					"patching_rect" : [ 1032.0, 355.0, 228.0, 20.0 ],
 					"text" : "carica messaggio all'apertura della patch"
 				}
 
@@ -100,7 +124,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1080.0, 72.0, 77.0, 20.0 ],
+					"patching_rect" : [ 1244.0, 92.0, 77.0, 20.0 ],
 					"presentation_linecount" : 2,
 					"text" : "tastiera MIDI"
 				}
@@ -114,7 +138,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 23.0, 439.0, 41.0 ],
+					"patching_rect" : [ 379.5, 7.0, 439.0, 41.0 ],
 					"presentation_linecount" : 4,
 					"text" : "OSCILLATORE SINUSOIDALE"
 				}
@@ -127,7 +151,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 784.5, 334.0, 80.0, 22.0 ],
+					"patching_rect" : [ 948.5, 354.0, 80.0, 22.0 ],
 					"text" : "loadmess 0.5"
 				}
 
@@ -143,7 +167,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 784.5, 374.0, 50.0, 22.0 ]
+					"patching_rect" : [ 948.5, 394.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -154,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 784.5, 407.0, 34.0, 22.0 ],
+					"patching_rect" : [ 948.5, 427.0, 34.0, 22.0 ],
 					"text" : "line~"
 				}
 
@@ -165,7 +189,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 842.0, 375.0, 144.0, 20.0 ],
+					"patching_rect" : [ 1006.0, 395.0, 144.0, 20.0 ],
 					"text" : "valore intensità (0.<X<1.)"
 				}
 
@@ -176,7 +200,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 796.0, 255.0, 136.0, 20.0 ],
+					"patching_rect" : [ 960.0, 275.0, 136.0, 20.0 ],
 					"text" : "valore ampiezza (Hertz)"
 				}
 
@@ -187,7 +211,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 796.0, 140.0, 70.0, 20.0 ],
+					"patching_rect" : [ 960.0, 160.0, 70.0, 20.0 ],
 					"text" : "valore MIDI"
 				}
 
@@ -201,7 +225,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 737.0, 140.0, 50.0, 22.0 ]
+					"patching_rect" : [ 901.0, 160.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -211,7 +235,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 775.0, 180.0, 107.0, 20.0 ],
+					"patching_rect" : [ 939.0, 200.0, 107.0, 20.0 ],
 					"text" : "MIDI to frequency"
 				}
 
@@ -223,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.0, 179.0, 32.0, 22.0 ],
+					"patching_rect" : [ 901.0, 199.0, 32.0, 22.0 ],
 					"text" : "mtof"
 				}
 
@@ -235,7 +259,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 789.0, 298.0, 181.0, 20.0 ],
+					"patching_rect" : [ 953.0, 318.0, 181.0, 20.0 ],
 					"text" : "OSCILLATORE SINUSOIDALE"
 				}
 
@@ -246,7 +270,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 850.0, 217.0, 228.0, 20.0 ],
+					"patching_rect" : [ 1014.0, 237.0, 228.0, 20.0 ],
 					"text" : "carica messaggio all'apertura della patch"
 				}
 
@@ -259,7 +283,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 737.0, 72.0, 336.0, 53.0 ]
+					"patching_rect" : [ 901.0, 92.0, 336.0, 53.0 ]
 				}
 
 			}
@@ -270,7 +294,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 760.0, 217.0, 83.0, 22.0 ],
+					"patching_rect" : [ 924.0, 237.0, 83.0, 22.0 ],
 					"text" : "loadmess 440"
 				}
 
@@ -283,7 +307,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 643.0, 581.0, 24.0, 24.0 ]
+					"patching_rect" : [ 807.0, 601.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -296,7 +320,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 737.0, 469.0, 48.0, 136.0 ],
+					"patching_rect" : [ 901.0, 489.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -319,7 +343,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 737.0, 618.0, 35.0, 22.0 ],
+					"patching_rect" : [ 901.0, 638.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -331,7 +355,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 737.0, 407.0, 29.5, 22.0 ],
+					"patching_rect" : [ 901.0, 427.0, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -345,7 +369,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 737.0, 254.0, 50.0, 22.0 ]
+					"patching_rect" : [ 901.0, 274.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -356,7 +380,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 737.0, 297.0, 43.0, 22.0 ],
+					"patching_rect" : [ 901.0, 317.0, 43.0, 22.0 ],
 					"text" : "cycle~"
 				}
 
