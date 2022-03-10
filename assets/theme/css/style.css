@@ -68,7 +68,10 @@ h6,
 .display-2,
 .display-4,
 .display-5,
-.display-7,
+.display-7 {
+  text-align: justify;
+}
+
 span,
 p,
 a {
