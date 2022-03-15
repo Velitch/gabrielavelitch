@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 27.0, 84.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 863.75, 30.0, 75.5, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Modulation/Vibrato Depth",
 					"textjustification" : 1
 				}
@@ -72,7 +71,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 778.5, 30.0, 66.0, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Modulator/Vibrato Frequency",
 					"textjustification" : 1
 				}
@@ -86,7 +84,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 668.5, 110.0, 66.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Carrier Frequency",
 					"textjustification" : 1
 				}
