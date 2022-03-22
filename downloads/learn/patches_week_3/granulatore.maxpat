@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 41.0, 84.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -4538,7 +4538,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 5.0, 393.0, 29.0 ],
-					"text" : "WEEK 2",
+					"text" : "GRANULATORE",
 					"textcolor" : [ 0.458823529411765, 0.67843137254902, 0.858823529411765, 1.0 ],
 					"textjustification" : 1
 				}
