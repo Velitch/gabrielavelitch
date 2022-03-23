@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1468.0, 705.0 ],
+		"rect" : [ 27.0, 84.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,50 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "FemVoice.aif",
+								"filename" : "FemVoice.aif",
+								"filekind" : "audiofile",
+								"id" : "u720000489",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-2",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 886.5, 57.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-94",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1020.0, 566.0, 24.0, 24.0 ]
+					"patching_rect" : [ 850.5845947265625, 572.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -56,7 +93,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1055.9154052734375, 566.0, 35.0, 22.0 ],
+					"patching_rect" : [ 886.5, 572.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -70,7 +107,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1055.9154052734375, 402.0, 48.0, 136.0 ],
+					"patching_rect" : [ 886.5, 408.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -501,15 +538,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-75", 0 ],
-					"source" : [ "obj-16", 0 ]
+					"destination" : [ "obj-65", 1 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-65", 1 ],
-					"source" : [ "obj-18", 0 ]
+					"destination" : [ "obj-44", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -571,13 +617,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-66", 0 ]
 				}
@@ -587,13 +626,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-69", 1 ],
 					"source" : [ "obj-67", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-69", 0 ]
 				}
 
 			}
@@ -620,7 +652,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
+					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-73", 0 ]
 				}
 
@@ -704,6 +736,12 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "FemVoice.aif",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/samples",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "chorus~.maxpat",
 				"bootpath" : "~/Desktop/gabrielavelitch/downloads/learn/patches_week_3/effects",
 				"patcherrelativepath" : ".",
