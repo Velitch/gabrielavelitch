@@ -4851,3 +4851,19 @@ a {
 }
 .cid-t16lhyK4qd .item-subtitle {
   text-align: left;
+  .cid-t1AvF6Newe {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+  }
+  @media (max-width: 991px) {
+    .cid-t1AvF6Newe .image-wrapper {
+      margin-bottom: 1rem;
+    }
+  }
+  .cid-t1AvF6Newe .row {
+    flex-direction: row-reverse;
+  }
+  .cid-t1AvF6Newe img {
+    width: 100%;
+  }
