@@ -1,13 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-.unselectable {
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-}
 .display-1 {
   font-family: 'Poppins', sans-serif;
   font-size: 5rem;
