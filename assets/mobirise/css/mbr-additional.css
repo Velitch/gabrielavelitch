@@ -4952,3 +4952,30 @@ a {
   .cid-t1GksNdDkS .mbr-section-subtitle {
     color: #ffffff;
   }
+  .cid-t7qXsS13I8 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #151515;
+  }
+  .cid-t7qXsS13I8 .mbr-overlay {
+    background-color: #ffffff;
+    opacity: 0.4;
+  }
+  .cid-t7qXsS13I8 form .mbr-section-btn {
+    text-align: center;
+    width: 100%;
+  }
+  .cid-t7qXsS13I8 form .mbr-section-btn .btn {
+    display: inline-flex;
+  }
+  @media (max-width: 991px) {
+    .cid-t7qXsS13I8 form .mbr-section-btn .btn {
+      width: 100%;
+    }
+  }
+  .cid-t7qXsS13I8 .mbr-section-title {
+    color: #75addb;
+  }
+  .cid-t7qXsS13I8 .mbr-section-subtitle {
+    color: #ffffff;
+  }
