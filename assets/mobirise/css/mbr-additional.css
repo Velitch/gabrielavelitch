@@ -5016,8 +5016,7 @@ a {
     color: #75addb;
   }
 
-  table {
-    font-family: arial, sans-serif;
+  .table {
     border-collapse: collapse;
     width: 100%;
   }
