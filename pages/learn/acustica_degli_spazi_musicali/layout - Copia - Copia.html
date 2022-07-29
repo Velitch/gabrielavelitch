@@ -11,6 +11,12 @@
   gtag('js', new Date());
   gtag('config', 'G-0MB26WWVES');
 </script>
+<script type="text/javascript" src="../swingjs/jquery/jquery.js"></script>
+<script type="text/javascript" src="../swingjs/js/j2sJQueryExt.js"></script>
+
+<script type="text/javascript" src="../swingjs/js/j2sApplet.js"></script>
+<script type="text/javascript" src="../swingjs/js/j2sSwingJS.js"></script>
+<script type="text/javascript" src="../swingjs/js/SJSApplet.js"></script>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,11 +98,54 @@
               <div class="col-md-12 col-lg-8">
                   <p class="mbr-text mbr-fonts-style display-7">
                     Immaginiamo ora di avere una situazione più complessa rispetto a quella dei <a href="https://www.gabrielavelitch.com/pages/learn/acustica_degli_spazi_musicali/01_02_01_modi_naturali.html"><b>modi naturali</b></a> tra due pareti riflettenti.
+                    Nel nuovo caso abbiamo un parallelepipedo di 6 pareti o uno spazio di tre dimensioni di una forma qualunque. Prendiamo l'equazione del campo (tempo e tre dimensioni, nel caso delle pareti abbiamo il tempo e una sola dimensione)
                   </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <script type="text/javascript">
+
+    ////J2S._checkLoad = true;
+
+    J2S._isAsync = false;
+
+    J2S.getProfile() // records repeat calls to overridden or overloaded Java methods
+
+    // use ?_USE=JAVA or _USE=SIGNED or _USE=HTML5
+
+    var app ;
+
+    jmol_isReady = function(applet) {
+    	J2S._getElement(applet, "appletdiv").style.border="1px solid blue"
+    	app = applet;
+    }
+
+    Info = {
+        code: "com.falstad.ModeBox",
+    	width: 660,
+    	height: 500,
+    	debug: false,
+    	color: "#F0F0F0",
+    	zIndexBase: 20000,
+    	z:{monitorZIndex:100},
+    	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+    	use: "HTML5",
+    	j2sPath: "../swingjs/j2s",
+    	jarPath: "../swingjs/java",
+    //	jarFile: "JStest.jar",
+    	isSigned: false,
+    	disableJ2SLoadMonitor: false,
+    	disableInitialConsole: false,
+            useFrame:"false",
+    	readyFunction: jmol_isReady,
+            allowjavascript: true
+    }
+
+    SwingJS.getApplet("ModeBox", Info)
+
+    </script>
 
 
 
