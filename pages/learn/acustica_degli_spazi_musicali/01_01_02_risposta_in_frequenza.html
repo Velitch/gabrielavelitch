@@ -19,7 +19,7 @@
   <meta name="description" content="">
 
 
-  <title>Il Concetto di Pregiudizio</title>
+  <title>Risposta in Frequenza</title>
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap.min.css">
@@ -78,7 +78,7 @@
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">Acustica degli Ambienti Musicali</h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Vibrazione Come Modello Universale</strong></h4>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Risposta in Frequenza</strong></h4>
             </div>
         </div>
     </div>
@@ -91,13 +91,62 @@
           <div class="row justify-content-center">
               <div class="col-md-12 col-lg-8">
                   <p class="mbr-text mbr-fonts-style display-7">
-
+                    Nel grafico della risposta in frequenza possiamo notare dei picchi di risonanza in prossimità delle frequenze appartenenti alla serie armonica.
                   </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Image-->
+          <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
+              <div class="container-fluid">
+                  <div class="row justify-content-center">
+                      <div class="col-12 col-lg-5">
+                          <div class="image-wrapper">
+                              <img src="https://www.gabrielavelitch.com/img/acustica_degli_spazi_musicali/05_grafico_risposta_in_frequenza.png" alt="www.gabrielavelitch.com">
+                              <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Grafico risposta in frequenza</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Text-->
+          <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="content5-1d">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-md-12 col-lg-8">
+                          <p class="mbr-text mbr-fonts-style display-7">
+                    Questo sistema risulta valido quando il nostro spazio somiglia ad esso, possiamo dunque applicarlo in gallerie, grandi garage (considerando soffitto e pavimento in quanto le pareti sono molto lontane).
+                    Qualsiasi sistema lineare tempo invariante si può esprimere attraverso la funzione della risposta all'impulso. La risposta all'impulso è l'uscita del sistema quando gli diamo in ingresso una funzione matematica particolare che si chiama <b>impulso di dirac</b>.
+                    L'impulso per definizione è una funzione matematica che rispetto all'operazione di convoluzione è come se fosse neutra, quindi è come se valesse 1.
+                    Quando faccio una convoluzione tra un impulso di dirac e la risposta all'impulso ottengo la risposta all'impulso: <b>i(t) * h(t) = h(t)</b>.
+                    La risposta all'impulso in sostanza è la funzione che mi permette di sondare tutte le proprietà di quel sistema e di ritrovarmele in uscita.
+                    Bisogna ricordare che nel caso della risposta in frequenza di un ambiente, essa vale solo per quella specifica disposizione sorgente-emettitore usata in fase di analisi.
+                    Cambiando questa disposizione, otterrò sempre risposte all'impulso differenti.
+                    <br>
+                    <br>
+                    Data la risposta all'impulso, attraverso la <b>trasformata di Laplace</b>, posso derivare la <b>funzione di trasferimento del filtro H(s)</b>.
+                    Questa (s) è una variabile complessa definita nel dominio di Laplace. Dentro di sè questa funzione di trasferimento ha tutte le informazioni che ha la risposta all'impulso, soltanto che viene vista in un dominio diverso, un dominio trasformato.
+                    Nel momento in cui calcoliamo questa funzione per una direzone partiolare di questa variabile, cioè quando <b>s = jω</b>, otteniamo la <b>risposta in frequenza H(jω)</b>.
+                    La risposta in frequenza ci permette di visualizzare sia lo <b>spettro del modulo</b> sia lo <b>spettro della fase</b>.
+                    <br>
+                    <br>
+                    Ricavando la risposta in frequenza, in realtà taglio fuori tutta quella parte della funzione di trasferimento che riguarda il tempo, ovvero il transitorio di quel sistema.
+                    Vogliamo dunque sottolineare che la risposta in frequenza ci restituisce il comportamento del filtro in condizioni stazionarie, cioè quando è passato un po di tempo e il sistema si è assestato.
+                    <br>
+                    <br>
+                    Ricapitolando, l'approccio allo studio di un ambiente attraverso l'analisi dei suoi modi naturali è vero e risulta valido per le condizioni di stazionarietà di quel sistema, cioè quando è passato un tempo sufficiente affinchè la famiglia di onde stazionarie si è stabilita all'interno tra le due pareti.
+                    Nella risposta all'impulso ho comunque tutte le informazioni del sistema, ma nel momento in cui ricavo la risposta in frequenza vedo solo quelle relative alla parte stazionaria del sistema.
+                    <br>
+                    <br>
+                    Il profilo di filtraggio della risposta in frequenza viene chiamato <b>comb</b> in quanto assomiglia di fatto ad un pettine.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <!-- Prev/Next-->
