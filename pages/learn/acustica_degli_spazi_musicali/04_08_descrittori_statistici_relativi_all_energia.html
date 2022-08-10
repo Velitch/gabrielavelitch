@@ -238,6 +238,60 @@
             <br>
             Ci sono diversi parametri per la coerenza del segnale tra due orecchie, tra cui la ITACC ovvero inter aural cross correlation. Tutti questi parametri vengono in genere registrati con delle Dummy-Head.
           </p>
+          <br>
+          <br>
+          <h3>Centre Time(ts)</h3>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+            Questa definizione parte dal presupposto che l'energia utile decade nei primi 50/80 ms.
+            Ma non in tutte le situazioni questo dato è uguale.
+            Quindi è definito un altro parametro, ovvero il <b>Centre Time</b>:
+            tempo baricentrico della risposta all'impulso, ovvero esso è il tempo che separa il 50% dell'energia prima di un istante e dopo un istante, individua dunque la metà di una IR dal punto di vista energetico, quindi il tempo passato il
+            quale, sono stato in vestito dal 50% dell'energia.
+            <br>
+            <br>
+            Calcola l'energia della IR, nel dominio tempo discreto, ovvero prendendo e sommando i quadrati della IR.
+            Facendo questa operazione, o ho tutta l'IR o faccio una stima della IR. Ció è legato al C50 e C80, poichè mi da una misura della
+            chiarezza del suono, poichè piú basso è il tempo centrale, piú chiaro risulterà il suono, poichè il 50% dell'energia è spostato sulle prime riflessioni; piú grande è il tempo centrale, piú l'energia è spalmata su tutta l'IR e quindi la
+            riverberazione della parte diffusa è piú forte.
+            Tipicamente per le applicazioni musicali e del parlato, il valore del ts è compreso tra 140 e 180 ms, in una banda tra i 250 e i 2000 Hz.
+            <br>
+            <br>
+            Ti dice come è fatta dal punto di vista energetico la IR; se il tempo centrale è troppo alto, il secondo 50% dell'energia è presente sulla coda dell'IR, ovvero sulla parte diffusa. Hai una IR molto piú omogenea(scende piú lentamente), se
+            hai invece una IR molto forte all'inizio e molto rapida a scendere, quindi la parte diffusa della IR è molto corta e hai meno riverbero, e dunque avrai un ts piú piccolo sbilanciato verso l'inizio.
+            <br>
+            <br>
+            ts piú piccolo -> IR più compatta -> energia su prime riflessioni
+            <br>
+            ts piú verso destra -> riverbero piú lungo, energia spalmata su parte diffusa(coda)
+            <br>
+            <br>
+            (Ambiente troppo asciutto non è percepito come confortevole, quindi è bene che un certo ambiente abbia una certa spazialità, anche se è bene che il contributo sia concentrato all'inizio)
+          </p>
+          <br>
+          <br>
+          <h3>Rinforzo acustico(G[dB])</h3>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+            Altro parametro utilizzato che riguarda l'acustica delle sale è l'indice di rinforzo acustico, indicato la lettera G. Esso è una misura dell'amplificazione acustica introdotta attraverso un apparato di amplificazione confrontata con la
+            risposta dell'ambiente a una sorgente sonora senza amplificazione acustica (similare ad il concetto di amplificazione trasparente, ovvero atteggiamento che dipende da vari fattori).
+            <br>
+            <br>
+            L'indice di rinforzo acustico da delle indicazioni su un apparato acustico che non si vuole che interferisca troppo con la sorgente naturale.
+            <br>
+            <br>
+            Ci sono delle normative che definiscono delle sorgenti standard per poter confrontare i diversi ambienti.
+            Ci sono diversi modi di definire questo rinforzo acustico, c'è ad esempio una norma che definisce due possibili criteri di misura di questo indice di rinforzo acustico:
+          <ul>
+            <oi>
+              Primo criterio è il rumore di fondo, che puó dipendere da tante cose, come l'isolamento dello spazio dall'ambiente esterno, rumore da impianto circolazione aria, ed a sala piena il rumore dipende da fattori come la sollecitazione
+              delle strutture, e dunque per valutare i criteri di fruizione percettiva della sala, andrebbe fatta un'analisi del rumore di fondo, che è un aspetto importante.
+              In una sala grande, il rumore di fondo puó arrivare anche a 40, 50dB.</oi>
+            <oi>
+              Secondo criterio è legato alla misura dell'energia, ovvero l'energia che arriva dalla sorgente amplificata in rapporto dall'energia che arriva senza amplificazione a 10 metri di distanza (misuro energia che mi arriva da apparato di
+              amplificazione, e energia senza amplificazione a 10m e svolgo il calcolo per trovare la G).
+              Vi sono degli altri parametri che vengono utilizzati in base a necessità e a ció che devo realizzare.
+              </p>
         </div>
       </div>
     </div>
