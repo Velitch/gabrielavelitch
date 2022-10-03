@@ -153,19 +153,18 @@
           <p class="mbr-text mbr-fonts-style display-7">
             L’area totale vale 1. La probabilità che la variabile assuma un valore tra 0.2 e 0.4 è pari all’area delimitata dalla base pari all’intervallo (0.4 - 0.2 = 0.2) e l’altezza pari a f(x) = 1 cioè
 
-            $$pb_{(0.2 < x < 0.4)}=f(x) \cdot dx=1 \cdot (0.4 - 0.2)=0.2=20\%$$
-
-            Il valor medio di una distribuzione uniforme che assume valori da 0 ad 1 è pari a 0.5
-
-             $$E(x)=\int\limits_{-\infty}^{\infty} x \cdot f(x) \cdot dx=\int\limits_{0}^{1} x \cdot 1 \cdot dx=\left.\frac{x^2}{2}\right|_0^1=\frac{1}{2}=0.5$$ </p>
-              <h3>Algoritmo in CSound</h3>
-              <p class="mbr-text mbr-fonts-style display-7">
-                In Csound è possibile generare distribuzioni uniformi utilizzando nello score il segno [˜ *1] se desideriamo che il valor medio sia 0.5, oppure [˜ *k] se vogliamo un valor medio pari a k/2.
-              </p>
-              <h3>Algoritmo in MaxMSP</h3>
-              <p class="mbr-text mbr-fonts-style display-7">
-                In MaxMSP si utilizza l’oggetto random se vogliamo un valor medio 0.5 oppure l’oggetto random seguito da un numero k che delimita l’intervallo il cui valore k/2 è il valor medio.
-              </p>
+            $$pb_{(0.2 < x < 0.4)}=f(x) \cdot dx=1 \cdot (0.4 - 0.2)=0.2=20\%$$ Il valor medio di una distribuzione uniforme che assume valori da 0 ad 1 è pari a 0.5 $$E(x)=\int\limits_{-\infty}^{\infty} x \cdot f(x) \cdot dx=\int\limits_{0}^{1} x
+              \cdot 1 \cdot dx=\left.\frac{x^2}{2}\right|_0^1=\frac{1}{2}=0.5$$ <br>
+              <br>
+          </p>
+          <h3>Algoritmo in CSound</h3>
+          <p class="mbr-text mbr-fonts-style display-7">
+            In Csound è possibile generare distribuzioni uniformi utilizzando nello score il segno [˜ *1] se desideriamo che il valor medio sia 0.5, oppure [˜ *k] se vogliamo un valor medio pari a k/2.
+          </p>
+          <h3>Algoritmo in MaxMSP</h3>
+          <p class="mbr-text mbr-fonts-style display-7">
+            In MaxMSP si utilizza l’oggetto random se vogliamo un valor medio 0.5 oppure l’oggetto random seguito da un numero k che delimita l’intervallo il cui valore k/2 è il valor medio.
+          </p>
         </div>
       </div>
     </div>
