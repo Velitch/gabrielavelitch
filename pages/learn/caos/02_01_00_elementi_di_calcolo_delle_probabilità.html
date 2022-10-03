@@ -44,6 +44,9 @@
   <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css">
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <!-- include internals -->
   <script>
     function includeHTML() {
@@ -107,35 +110,35 @@
         <div class="col-md-12 col-lg-8">
           <p class="mbr-text mbr-fonts-style display-7">
             Un esperimento è qualsiasi processo che produce una realizzazione (o osservazione).
-            L’insieme di tutte le possibili realizzazioni di un esperimento viene detto <b>sample</b> space ed indicato con S.
+            L’insieme di tutte le possibili realizzazioni di un esperimento viene detto <b>sample space</b> ed indicato con S.
           <ul>
             <li>lancio di 2 monete S = {(T,T), (T,C), (C,T), (C,C)}</li>
             <li>gara di 3 cavalli (a, b, c) S = {tutti i possibili ordinamenti di(a,b, c)} = {(a, b, c), (a, c, b), . . . , (c, b, a)}</li>
           </ul>
           <p class="mbr-text mbr-fonts-style display-7">
-          La frequenza di un evento è data dal caso favorevole all’evento rispetto al numero dei casi possibili.
-          La probabilità è il valore della frequenza dell’evento quando il numero degli esperimenti tende ad infinito
+            La frequenza di un evento è data dal caso favorevole all’evento rispetto al numero dei casi possibili.
+            La probabilità è il valore della frequenza dell’evento quando il numero degli esperimenti tende ad infinito
 
-          Consideriamo un esperimento con sample space S.
-          Supponiamo che ad ogni evento A sia associato un numero chiamato probabilità di A ed indicato con P(A), che soddisfa le seguenti proprietà:
+            Consideriamo un esperimento con sample space S.
+            Supponiamo che ad ogni evento A sia associato un numero chiamato probabilità di A ed indicato con P(A), che soddisfa le seguenti proprietà:
           <ul>
             <li>Per ogni evento A, la probabilità di A è un numero tra 0 e 1: 0 ≤ P(A) ≤ 1</li>
             <li>La probabilità del sample space S è 1: P(S) = 1</li>
             <li>La probabilità dell’unione di eventi disgiunti è uguale alla somma delle probabilità di tali eventi: P(A ∪ B) = P(A) + P(B)</li>
           </ul>
           <p class="mbr-text mbr-fonts-style display-7">
-          In generale 2 eventi potrebbero non essere disgiunti.
+            In generale 2 eventi potrebbero non essere disgiunti.
 
-          $$P(A \bigcup B) = P(A) + P(B) − P(A \bigcap B)$$
+            $$P(A \bigcup B) = P(A) + P(B) − P(A \bigcap B)$$
 
-          Esempio: un certo negozio accetta pagamenti o con carte di credito VISA o Mastercard.
+            Esempio: un certo negozio accetta pagamenti o con carte di credito VISA o Mastercard.
 
-          22% dei clienti ha Mastercard A
-          58% dei clienti ha VISA. B
-          14% dei clienti ha entrambe. A ∩ B
+            22% dei clienti ha Mastercard A
+            58% dei clienti ha VISA. B
+            14% dei clienti ha entrambe. A ∩ B
 
-          Qual è la probabilità che un cliente ha almeno una delle 2 carte?
-          $$P(A) = 0.22, P(B) = 0.58 P(A \bigcup B) = P(A) + P(B) − P(A \bigcap B) = 0.22 + 0.58 − 0.14 = 0.66$$
+            Qual è la probabilità che un cliente ha almeno una delle 2 carte?
+            $$P(A) = 0.22, P(B) = 0.58 P(A \bigcup B) = P(A) + P(B) − P(A \bigcap B) = 0.22 + 0.58 − 0.14 = 0.66$$
 
 
           </p>
