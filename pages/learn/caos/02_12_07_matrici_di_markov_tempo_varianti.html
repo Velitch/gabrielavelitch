@@ -23,7 +23,7 @@
   <meta name="description" content="">
 
 
-  <title>Estensione della Matrice di Probabilità</title>
+  <title>Matrici di Markov Tempo-Varianti</title>
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap.min.css">
@@ -94,7 +94,7 @@
       <div class="row justify-content-center">
         <div class="title col-md-12 col-lg-10">
           <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">Caos</h3>
-          <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Estensione della Matrice di Probabilità</strong></h4>
+          <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Matrici di Markov Tempo-Varianti</strong></h4>
         </div>
       </div>
     </div>
@@ -107,96 +107,25 @@
       <div class="row justify-content-center">
         <div class="col-md-12 col-lg-8">
           <p class="mbr-text mbr-fonts-style display-7">
-            Negli esempi precedenti abbiamo descritto il Random walk, che implica che
-            lo stato successivo raggiunto dal sistema sia adiacente (gradino successivo o
-            precedente) rispetto a quello attuale.
-            Una molecola di gas si muove nello spazio istante per istante in questo
-            modo, non potendo saltare da un punto all’altro dello spazio.
+            La matrice di probabilità potrebbe nel corso del tempo modificare i propri valori, modificando la determinazione degli stati successivi, in modo analogo ad avere una moneta che nel corso dei o che la polarizzazione di un evento
+            (altezza-durata) nel tempo.
             <br>
             <br>
-            Per implementare un random walk tridimensionale saranno necessarie 3 matrici
-            di probabilità rispettivamente per le tre dimensioni spaziali x,y,z. La traiettoria
-            della particella sarà f(x,y,z,t)
+            E’ sufficiente modificare i valori della matrice di probabilità.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Image-->
-  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-5">
-          <div class="image-wrapper">
-            <img src="https://www.gabrielavelitch.com/img/caos/48.webp" alt="www.gabrielavelitch.com">
-            <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">fig. 48 <br> </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Text-->
-  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="content5-1d">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-8">
-          <p class="mbr-text mbr-fonts-style display-7">
-            Possiamo considerare un sistema in modo più generale, con la transizione ad uno stato
-            successivo, non adiacente allo stato precedente.
-            Questo aspetto è particolarmente interessante quando si tratta di articolare nel tempo
-            parametri musicali come le altezze, durate, pan, ecc.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Image-->
-  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-5">
-          <div class="image-wrapper">
-            <img src="https://www.gabrielavelitch.com/img/caos/49.webp" alt="www.gabrielavelitch.com">
-            <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">fig. 49 <br> </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Text-->
-  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="content5-1d">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-8">
-          <p class="mbr-text mbr-fonts-style display-7">
-            La matrice in esempio (da completare) indica la probabilità di avere una nuova altezza, a partire da un’altezza fissata.
-            <br>
-            <br>
-            Come si può osservare la diagonale principale ha tutti 0 ad eccezione del re (0.5) che subisce un peso maggiore (polarizzazione).
-            <br>
-            <br>
-            Per ricavare una matrice markoviana da un flusso di dati in ingresso, bisogna verificare le occorrenze (numero di volte in cui si presenta un evento frequenza]) e costruire successivamente la matrice delle probabilità dividendo in numero
-            di occorrenze per il numero totale di eventi.
-            <br>
-            <br>
-            Da sequenze MIDI si possono estrarre le occorrenze e la matrice di probabilità ed in tal caso è possibile iniziare ad effettuare una analisi delle occorrenze (altezze e durate) al fine di una ri-produzione stilistica.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Prev/Next-->
   <section data-bs-version="5.1" class="content12 cid-sZjcQYH0JS" id="content12-27">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 col-lg-10">
-          <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="https://www.gabrielavelitch.com/pages/learn/caos/02_12_02_implementazione_del_processo_markoviano.html">&lt; Previous</a>
-            <a class="btn btn-primary display-4" href="https://www.gabrielavelitch.com/pages/learn/caos/02_12_04_applicazione_del_procsso_markoviano_ai_parametri_di_una_composizione.html">&nbsp; &nbsp; Next &gt;&nbsp; &nbsp;</a>
+          <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="https://www.gabrielavelitch.com/pages/learn/caos/02_12_05_matrici_di_markov_del_secondo_ordine.html">&lt; Previous</a>
           </div>
           <br>
           <br>
