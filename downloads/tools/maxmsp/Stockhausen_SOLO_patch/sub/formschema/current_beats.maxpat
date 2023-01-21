@@ -45,8 +45,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 34.0, 121.0, 22.0 ],
-					"text" : "r current_cycle_page"
+					"patching_rect" : [ 35.0, 34.0, 87.0, 22.0 ],
+					"text" : "r current_cycle"
 				}
 
 			}
@@ -221,7 +221,6 @@
 				"box" : 				{
 					"id" : "obj-26",
 					"inputs" : 6,
-					"int" : 5,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,

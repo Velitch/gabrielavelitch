@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 967.0, 296.0 ],
+		"rect" : [ 181.0, 303.0, 967.0, 296.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -225,7 +225,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.0, 34.0, 121.0, 22.0 ],
-					"text" : "r current_cycle_page"
+					"text" : "r current_cycle"
 				}
 
 			}
@@ -233,7 +233,7 @@
 				"box" : 				{
 					"id" : "obj-26",
 					"inputs" : 6,
-					"int" : 1,
+					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,

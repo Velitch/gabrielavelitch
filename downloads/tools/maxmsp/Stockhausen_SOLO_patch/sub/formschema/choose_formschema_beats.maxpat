@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 61.0, 132.0, 1468.0, 757.0 ],
+		"rect" : [ 41.0, 132.0, 1468.0, 757.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -465,8 +465,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.388888888889369, 122.0, 70.0, 22.0 ],
-					"text" : "loadmess 6"
+					"patching_rect" : [ 180.388888888889369, 122.0, 77.0, 22.0 ],
+					"text" : "loadmess 12"
 				}
 
 			}
@@ -593,7 +593,6 @@
 				"box" : 				{
 					"id" : "obj-102",
 					"inputs" : 6,
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -726,7 +725,6 @@
 				"box" : 				{
 					"id" : "obj-84",
 					"inputs" : 6,
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -859,7 +857,6 @@
 				"box" : 				{
 					"id" : "obj-67",
 					"inputs" : 6,
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -992,7 +989,6 @@
 				"box" : 				{
 					"id" : "obj-50",
 					"inputs" : 6,
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -1125,7 +1121,6 @@
 				"box" : 				{
 					"id" : "obj-32",
 					"inputs" : 6,
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -1258,7 +1253,6 @@
 				"box" : 				{
 					"id" : "obj-93",
 					"inputs" : 6,
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,

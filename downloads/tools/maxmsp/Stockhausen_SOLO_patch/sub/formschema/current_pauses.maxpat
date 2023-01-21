@@ -225,7 +225,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.0, 34.0, 121.0, 22.0 ],
-					"text" : "r current_cycle_page"
+					"text" : "r current_cycle"
 				}
 
 			}
