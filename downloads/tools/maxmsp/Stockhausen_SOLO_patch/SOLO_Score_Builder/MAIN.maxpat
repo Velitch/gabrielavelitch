@@ -53,7 +53,7 @@
 					"presentation_rect" : [ 681.498723579570651, 2.5, 100.617326704785228, 21.0 ],
 					"text" : "TOTAL TIME",
 					"textcolor" : [ 0.925490196078431, 0.925490196078431, 0.925490196078431, 1.0 ],
-					"textjustification" : 1
+					"textjustification" : 2
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 681.498723579570651, 19.5, 100.0, 23.0 ],
 					"text" : "12 ' 26.2 ''",
-					"textjustification" : 1
+					"textjustification" : 2
 				}
 
 			}
