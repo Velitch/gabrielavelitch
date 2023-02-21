@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 207.0, 137.0, 22.0 ],
-					"text" : "if $f1 > 20. then 1 else 0"
+					"patching_rect" : [ 49.0, 207.0, 144.0, 22.0 ],
+					"text" : "if $f1 >= 20. then 1 else 0"
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 244.0, 144.0, 22.0 ],
+					"patching_rect" : [ 49.0, 244.0, 150.0, 22.0 ],
 					"text" : "s current_page_somewhat"
 				}
 
@@ -92,8 +92,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 966.333333333333485, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_6_somewhat"
+					"patching_rect" : [ 966.333333333333485, 91.0, 139.0, 22.0 ],
+					"text" : "r page_6_somewhat"
 				}
 
 			}
@@ -104,8 +104,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 813.444444444444571, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_5_somewhat"
+					"patching_rect" : [ 813.444444444444571, 91.0, 139.0, 22.0 ],
+					"text" : "r page_5_somewhat"
 				}
 
 			}
@@ -116,8 +116,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 660.555555555555657, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_4_somewhat"
+					"patching_rect" : [ 660.555555555555657, 91.0, 139.0, 22.0 ],
+					"text" : "r page_4_somewhat"
 				}
 
 			}
@@ -128,8 +128,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 507.666666666666742, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_3_somewhat"
+					"patching_rect" : [ 507.666666666666742, 91.0, 139.0, 22.0 ],
+					"text" : "r page_3_somewhat"
 				}
 
 			}
@@ -141,7 +141,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 49.0, 43.0, 121.0, 22.0 ],
-					"text" : "r current_cycle_page"
+					"text" : "r analyzed_page"
 				}
 
 			}
@@ -239,7 +239,7 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"inputs" : 6,
-					"int" : 1,
+					"int" : 5,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -256,8 +256,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 354.777777777777828, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_2_somewhat"
+					"patching_rect" : [ 354.777777777777828, 91.0, 139.0, 22.0 ],
+					"text" : "r page_2_somewhat"
 				}
 
 			}
@@ -268,8 +268,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 201.888888888888914, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_1_somewhat"
+					"patching_rect" : [ 201.888888888888914, 91.0, 139.0, 22.0 ],
+					"text" : "r page_1_somewhat"
 				}
 
 			}

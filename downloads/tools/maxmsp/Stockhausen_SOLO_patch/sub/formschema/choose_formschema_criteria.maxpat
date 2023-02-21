@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 84.0, 1468.0, 705.0 ],
+		"rect" : [ 95.0, 127.0, 1468.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -210,7 +210,6 @@
 				"box" : 				{
 					"id" : "obj-129",
 					"inputs" : 6,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -426,7 +425,6 @@
 				"box" : 				{
 					"id" : "obj-147",
 					"inputs" : 6,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -608,7 +606,6 @@
 				"box" : 				{
 					"id" : "obj-89",
 					"inputs" : 6,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -824,7 +821,6 @@
 				"box" : 				{
 					"id" : "obj-114",
 					"inputs" : 6,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -1006,25 +1002,12 @@
 				"box" : 				{
 					"id" : "obj-72",
 					"inputs" : 6,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 45.500000000000455, 470.0, 828.333333333333485, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1060.666666666667197, 76.0, 133.0, 89.0 ],
-					"text" : "1 = similar\n2 = different\n3 = contrary\n4 = similar & different\n5 = different & contray\n6 = similar & contrary"
 				}
 
 			}
@@ -1234,7 +1217,6 @@
 				"box" : 				{
 					"id" : "obj-93",
 					"inputs" : 6,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,

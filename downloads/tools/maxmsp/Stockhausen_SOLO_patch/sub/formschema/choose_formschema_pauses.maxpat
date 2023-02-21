@@ -1013,18 +1013,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-19",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1012.388888888889369, 27.5, 123.0, 89.0 ],
-					"text" : "1 = long\n2 = medium\n3 = short\n4 = long & short\n5 = medium & short\n6 = long & medium"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "message",
 					"numinlets" : 2,

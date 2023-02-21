@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 207.0, 137.0, 22.0 ],
-					"text" : "if $f1 > 20. then 1 else 0"
+					"patching_rect" : [ 49.0, 207.0, 144.0, 22.0 ],
+					"text" : "if $f1 > 50. then 1 else 0"
 				}
 
 			}
@@ -93,7 +93,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 966.333333333333485, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_6_gruppen"
+					"text" : "r page_6_gruppen"
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 813.444444444444571, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_5_gruppen"
+					"text" : "r page_5_gruppen"
 				}
 
 			}
@@ -117,7 +117,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 660.555555555555657, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_4_gruppen"
+					"text" : "r page_4_gruppen"
 				}
 
 			}
@@ -129,7 +129,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 507.666666666666742, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_3_gruppen"
+					"text" : "r page_3_gruppen"
 				}
 
 			}
@@ -141,7 +141,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 49.0, 43.0, 121.0, 22.0 ],
-					"text" : "r current_cycle_page"
+					"text" : "r analyzed_page"
 				}
 
 			}
@@ -257,7 +257,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 354.777777777777828, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_2_gruppen"
+					"text" : "r page_2_gruppen"
 				}
 
 			}
@@ -269,7 +269,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 201.888888888888914, 91.0, 133.0, 22.0 ],
-					"text" : "sum_page_1_gruppen"
+					"text" : "r page_1_gruppen"
 				}
 
 			}

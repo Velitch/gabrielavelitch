@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -45.0, 90.0, 985.0, 705.0 ],
+		"rect" : [ 41.0, 90.0, 985.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -476,8 +476,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.500000000000455, 1620.0, 99.0, 22.0 ],
-					"text" : "s cycle_F_period"
+					"patching_rect" : [ 45.500000000000455, 1620.0, 83.0, 22.0 ],
+					"text" : "s cycle_F_per"
 				}
 
 			}
@@ -609,8 +609,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.500000000000455, 1349.0, 100.0, 22.0 ],
-					"text" : "s cycle_E_period"
+					"patching_rect" : [ 45.500000000000455, 1349.0, 84.0, 22.0 ],
+					"text" : "s cycle_E_per"
 				}
 
 			}
@@ -742,8 +742,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.500000000000455, 1078.0, 101.0, 22.0 ],
-					"text" : "s cycle_D_period"
+					"patching_rect" : [ 45.500000000000455, 1078.0, 85.0, 22.0 ],
+					"text" : "s cycle_D_per"
 				}
 
 			}
@@ -875,8 +875,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.500000000000455, 807.0, 101.0, 22.0 ],
-					"text" : "s cycle_C_period"
+					"patching_rect" : [ 45.500000000000455, 807.0, 85.0, 22.0 ],
+					"text" : "s cycle_C_per"
 				}
 
 			}
@@ -1008,8 +1008,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.500000000000455, 536.0, 100.0, 22.0 ],
-					"text" : "s cycle_B_period"
+					"patching_rect" : [ 45.500000000000455, 536.0, 84.0, 22.0 ],
+					"text" : "s cycle_B_per"
 				}
 
 			}
@@ -1141,8 +1141,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.500000000000455, 265.0, 100.0, 22.0 ],
-					"text" : "s cycle_A_period"
+					"patching_rect" : [ 45.500000000000455, 265.0, 84.0, 22.0 ],
+					"text" : "s cycle_A_per"
 				}
 
 			}
