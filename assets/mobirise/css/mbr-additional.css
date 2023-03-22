@@ -5667,3 +5667,93 @@ a {
     background: #000;
     color: #fff;
   }
+  .cid-tzbH0PLAAB {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  .cid-tzbH0PLAAB .timeline-element {
+    position: relative;
+  }
+  .cid-tzbH0PLAAB .timelines-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cid-tzbH0PLAAB .image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .cid-tzbH0PLAAB .mbr-section-title,
+  .cid-tzbH0PLAAB .mbr-section-subtitle,
+  .cid-tzbH0PLAAB .timeline-date {
+    text-align: center;
+  }
+  .cid-tzbH0PLAAB .iconBackground {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    margin-left: -9px;
+    padding: 0;
+  }
+  @media (max-width: 767px) {
+    .cid-tzbH0PLAAB .iconBackground {
+      left: 15px;
+      top: 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    .cid-tzbH0PLAAB .iconBackground {
+      top: 70px;
+      left: 50%;
+    }
+  }
+  .cid-tzbH0PLAAB .row:after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 2px;
+  }
+  @media (max-width: 767px) {
+    .cid-tzbH0PLAAB .row:after {
+      height: calc(100% + 30px);
+      top: 50px;
+      left: 15px;
+    }
+  }
+  @media (min-width: 768px) {
+    .cid-tzbH0PLAAB .row:after {
+      height: calc(100% - 20px);
+      top: 90px;
+      left: 50%;
+    }
+  }
+  @media (max-width: 767px) {
+    .cid-tzbH0PLAAB .timeline-date-wrapper,
+    .cid-tzbH0PLAAB .timeline-text-wrapper,
+    .cid-tzbH0PLAAB .image-wrapper {
+      padding: 0rem;
+      padding-left: 2rem;
+    }
+    .cid-tzbH0PLAAB .mbr-timeline-date {
+      text-align: left !important;
+    }
+    .cid-tzbH0PLAAB .mbr-timeline-title {
+      text-align: left;
+      margin-top: 1rem;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .cid-tzbH0PLAAB .timeline-date-wrapper,
+    .cid-tzbH0PLAAB .timeline-text-wrapper {
+      padding: 1rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .cid-tzbH0PLAAB .timeline-date-wrapper,
+    .cid-tzbH0PLAAB .timeline-text-wrapper,
+    .cid-tzbH0PLAAB .image-wrapper {
+      padding: 2rem;
+    }
+  }
