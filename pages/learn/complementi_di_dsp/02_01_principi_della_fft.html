@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0MB26WWVES"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0MB26WWVES');
+</script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://www.gabrielavelitch.com/assets/images/favicon-96x96.png" type="image/x-icon">
+  <meta name="description" content="">
+
+
+  <title>Principi della FFT</title>
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- include internals -->
+  <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+  </script>
+
+<body>
+
+
+  <!-- Navbar-->
+<div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_nav.html"></div>
+
+  <!-- Title-->
+<section data-bs-version="5.1" class="content4 cid-sYxSws07LF" id="content4-1b">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">Complementi di DSP</h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Principi della FFT</strong></h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="content5-1d">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-8">
+                  <p class="mbr-text mbr-fonts-style display-7">
+                    La g in tempo reale implica che vengano analizzati un numero minimo di
+                    campioni; non avrebbe senso effettuare la g di un singolo campione, quale
+                    sarebbe la sua frequenza?
+                    <br>
+                    <br>
+                    Consideriamo di prendere una finestra di campioni pari a 1024 campioni (potenza
+                    di 2); questa finestra viene detta window (o frame) size.
+                    <br>
+                    <br>
+                    Se effettuo la g su questa finestra è come se la effettuassi su un segnale
+                    spalmato su 1024 campioni, che ad una frequenza di campionamento di 44100
+                    Hz durerebbe.
+                    <br>
+                    <br>
+                    1/44100 ∙1024 = 0.023 𝑠 a cui corrisponde una frequenza fondamentale di
+                    1/𝑇 = 1/0.023 = 43.06𝐻𝑧
+                    <br>
+                    <br>
+                    Questo significa che si effettua l’analisi di Fourier su un segnale che dura 0.023 s
+                    (che per Fourier deve ripetersi periodicamente) quindi cioè la frequenza più piccola
+                    che presenta il segnale dentro la window size analizzato è di 43,06 Hz
+                    <br>
+                    <br>
+                    Quando si effe:ua la g, essa genera una coppia di valori (coeff di Fourier) per ogni
+frequenza multipla della frequenza fondamentale; si ha una coppia di coefficiente di Fourier
+per f = 0Hz; la coppia successiva f = 43.06 Hz e sicuramente per la max frequenza possibile
+cioè la frequenza di Nyquist.
+<br>
+<br>
+𝑓= 𝑓↓𝑐 /2 = 44100/2 =22050
+<br>
+<br>
+Quindi la banda da 0 Hz a 22050 viene ripartita in zone multiple di f = 43.06 Hz. Questa
+frequenza detta frequenza fondamentale della g, può essere considerata il “passo” con il
+quale la g ripartisce lo spettro.
+<br>
+<br>
+In totale si avranno 22050/43.066 =512 bande e quindi 512 coppie di coefficienO di
+Fourier fino a fc/2;
+<br>
+<br>
+I valori dei coeff di Fourier per le frequenze da fc/2 a fc (altre 512 bande) non interessano
+perché riguardano frequenze al di la di fc/2.
+<br>
+<br>
+In generale data una frequenza di campionamento e una window size
+la frequenza minima che si può analizzare è data dalla formula
+f0 = 𝑓↓𝑐 /𝑤𝑖𝑛𝑑𝑜𝑤_𝑠𝑖𝑧𝑒 
+<br>
+<br>
+Nel nostro caso 44100/43.066 = 1024.15 bande, che vengono
+idenOficate con numeri interi progressivi. Queste bande vengono
+de:e bins e il numero di bins coincide con il numero di campioni
+della window-size.
+<br>
+<br>
+Nell’analisi di Fourier si terrà però conto solo dei primi 512 bins (cioè
+delle prime 512 coppie di coeff. di Fourier) poiché sono relativi alla
+porzione di spettro tra 0 Hz e fc/2.
+<br>
+<br>
+Quindi una g produrrà per ogni bin una coppia di valori che rappresentano i
+coefficienti di Fourier (e quindi segnalano la presenza di energia) per ogni
+specifico bin.
+<br>
+<br>
+Per estrarre la quantità di energia è conveniente passare alle coordinate
+polari, che rappresentano un numero complesso in termini di ampiezza e fase.
+<br>
+<br>
+In Max-msp è possibile scrivere questi valori (ampiezza e fase) per ogni bin su
+un buffer e quindi visualizzarne il contenuto.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Prev/Next-->
+<section data-bs-version="5.1" class="content12 cid-sZjcQYH0JS" id="content12-27">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="https://www.gabrielavelitch.com/pages/learn/complementi_di_dsp/02_00_fast_fourier_transform.html">&lt; Previous</a>
+                    <a class="btn btn-primary display-4" href="https://www.gabrielavelitch.com/pages/learn/complementi_di_dsp/02_02_fft_in_max_msp.html">&nbsp; &nbsp; Next &gt;&nbsp; &nbsp;</a></div>
+                    <br>
+                    <br>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer-->
+<div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_footer.html"></div>
+
+
+  <section style="display: none !important;background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/z" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Site was <a href="https://mobirise.site/h" style="color:#aaa;">started with</a> Mobirise</p>
+
+
+   <script src="https://www.gabrielavelitch.com/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/parallax/jarallax.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/smoothscroll/smooth-scroll.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/ytplayer/index.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/dropdown/js/navbar-dropdown.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+   <script src="https://www.gabrielavelitch.com/assets/theme/js/script.js"></script>
+   <script>
+   includeHTML();
+   </script>
+
+  </body>
+</html>

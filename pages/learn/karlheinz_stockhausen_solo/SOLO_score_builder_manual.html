@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MB26WWVES"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-0MB26WWVES');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://www.gabrielavelitch.com/assets/images/favicon-96x96.png" type="image/x-icon">
+  <meta name="description" content="">
+
+
+  <title>SOLO - Score Builder Manual</title>
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap">
+  </noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap">
+  </noscript>
+  <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  <!-- include internals -->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
+
+<body>
+
+
+  <!-- Navbar-->
+  <div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_nav.html"></div>
+
+  <!-- Title-->
+  <section data-bs-version="5.1" class="content4 cid-sYxSws07LF" id="content4-1b">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-md-12 col-lg-10">
+          <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">Karlheinz Stockhausen - SOLO</h3>
+          <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>SOLO - Score Builder Manual</strong></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+            <strong>INTRODUCTION</strong>
+          </h4>
+          <p class="mbr-text mbr-fonts-style display-7">
+            This Max MSP patch is designed to help create one's own version of Stockhausen's Solo score. By using this patch, the time required to produce the score is drastically reduced, allowing for greater focus on the creative aspects rather
+            than the logical or computational components.
+            <br>
+            <br>
+            The Max MSP patch has been designed to simplify the process of creating the score, allowing you to save time and increase efficiency. Thanks to this technological solution, musicians can focus on artistic choices, rhythmic variations,
+            sound usage, and note organization, rather than the mathematical operations required to calculate timing, pauses, and effects.
+            <br>
+            <br>
+            This patch requires <a href="https://cycling74.com/downloads" target="_blank"><b>Max MSP</b></a> to be preinstalled on your computer.
+            <br>
+          <ol>
+            <li>Download the <a href="https://www.gabrielavelitch.com/downloads/tools/maxmsp/Stockhausen_SOLO_patch/SOLO_Score_Builder.zip" target="_blank"><b>Solo Score Builder MaxMSP patch</b></a></li>
+            <li>Unzip</li>
+            <li>Open the MAIN.maxpat, the process may take several minutes</li>
+          </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+            <strong>FORMSCHEMA INSTRUCTIONS</strong>
+          </h4>
+          <p class="mbr-text mbr-fonts-style display-7">
+            The "Formschema Instructions" section is where you can find all the instructions for writing your own version of the score. Before starting, it is essential to have read the instructions provided by Stockhausen in the introduction of the
+            <a href="https://www.gabrielavelitch.com/downloads/scores/karlheinz_stockhausen_solo.pdf" target="_blank"><b>original score</b></a>.
+            <br>
+            <br>
+            This section provides a detailed guide on how to structure the score and how to notate the various elements of the composition. It is important to follow these instructions carefully in order to accurately represent the composer's
+            intentions.
+            <br>
+            <br>
+            Moreover, it is recommended to have a good understanding of Stockhausen's style and compositional techniques in order to fully appreciate the complexity of the score and create a faithful rendition of it. By combining the instructions
+            from the "Formschema" section with your own creative input, you can create a unique and personal interpretation of the Solo score that pays homage to Stockhausen's innovative approach to contemporary music.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image-->
+  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5">
+          <div class="image-wrapper">
+            <img src="https://www.gabrielavelitch.com/img/karlheinz_stockhausen_solo/formschema/formschema_v5.webp" alt="www.gabrielavelitch.com">
+            <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Formschema version V</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <p class="mbr-text mbr-fonts-style display-7">
+            The "Formschema Instructions" section, in addition to reporting all the instructions of the "Formschema" from the original score, also includes the values of BPMs for notes and pauses, which is an essential aspect for managing tempo.
+            <br>
+            <br>
+            Through the dropdown menu located next to the text "FORMSCHEMA VERSION", you can select the version you wish to perform (I, II, III, IV, V, VI). Once you have chosen the version, the system will process the instructions to be followed
+            (this process may take a few seconds).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image-->
+  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5">
+          <div class="image-wrapper">
+            <img src="https://www.gabrielavelitch.com/img/karlheinz_stockhausen_solo/solo_patch_1.webp" alt="www.gabrielavelitch.com">
+            <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Formschema instructions version V</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <p class="mbr-text mbr-fonts-style display-7">
+            The dropdown menu provides a convenient and user-friendly way to switch between different versions and compare them, allowing you to explore the full range of possibilities offered by the Solo score. By selecting different versions and
+            experimenting with your own variations, you can gain a deeper understanding of the score and develop your own unique approach to performing it.
+            <br>
+            <br>
+            By clicking on the buttons A, B, C, D, E, F, you can select the cycle you are currently analyzing. This process will trigger the recalculation of the chosen material and display it in the "Material Chooser" section (this may take a few
+            seconds).
+            <br>
+            <br>
+            The buttons A, B, C, D, E, F correspond to different cycles within the score, and by selecting them, you can focus on specific sections of the composition and analyze their structure and characteristics in more detail.
+            <br>
+            <br>
+            For the description of the instructions, refer to the "PREPARATION OF A VERSION" paragraph in the original score.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="content5-1d">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FORMSCHEMA VERSION</td>
+                <td>use the dropdown menu to choose a formschema (I, II, III, IV, V, VI)</td>
+              </tr>
+              <tr>
+                <td>TOTAL TIME</td>
+                <td>total time of the formschema</td>
+              </tr>
+              <tr>
+                <td>CYCLES</td>
+                <td>click to select the cycle you want to analyse</td>
+              </tr>
+              <tr>
+                <td>PERIODS</td>
+                <td>periods in a cycle</td>
+              </tr>
+              <tr>
+                <td>SECONDS</td>
+                <td>period duration in seconds.</td>
+              </tr>
+              <tr>
+                <td>BEATS</td>
+                <td>beats in a period</td>
+              </tr>
+              <tr>
+                <td>PAUSE BPM</td>
+                <td>bpm values for pauses</td>
+              </tr>
+              <tr>
+                <td>BPM</td>
+                <td>bpm value for notes</td>
+              </tr>
+              <tr>
+                <td>COMPARE</td>
+                <td>shows which cycle to compare</td>
+              </tr>
+              <tr>
+                <td>MATERIAL</td>
+                <td>shows which material to choose</td>
+              </tr>
+              <tr>
+                <td>CRITERIA</td>
+                <td>shows the used criteria</td>
+              </tr>
+              <tr>
+                <td>PAUSES</td>
+                <td>durations for pauses</td>
+              </tr>
+              <tr>
+                <td>STRUCTURE</td>
+                <td>shows which kind of structure to use</td>
+              </tr>
+              <tr>
+                <td>NOTES</td>
+                <td>notes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+            <strong>PAGES COMPARATOR</strong>
+          </h4>
+          <p class="mbr-text mbr-fonts-style display-7">
+            The "Pages Comparator" section displays the percentage values of some of the most significant characteristics of the musical material.
+            <br>
+            <br>
+            By comparing the percentages of different cycles or versions, musicians can gain insights into the structure and evolution of the Solo score, as well as identify patterns and relationships between different sections.
+            <br>
+            <br>
+            The Pages Comparator is a powerful tool for analyzing and interpreting the score, and can help musicians develop a deeper understanding of its complex and innovative structure.
+            <br>
+            <br>
+            By clicking on the "PAGES ORDER" button, the system will generate a new random sequence from 1 to 6 (this process may take a few seconds). This process will also refresh the "Material Chooser" section.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Image-->
+  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5">
+          <div class="image-wrapper">
+            <img src="https://www.gabrielavelitch.com/img/karlheinz_stockhausen_solo/solo_patch_3.webp" alt="www.gabrielavelitch.com">
+            <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Pages comparator</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="content5-1d">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TIMBRE N</td>
+                <td>natural timbre, no effect</td>
+              </tr>
+              <tr>
+                <td>TIMBRE I</td>
+                <td>chosen timbre I</td>
+              </tr>
+              <tr>
+                <td>TIMBRE II</td>
+                <td>chosen timbre II</td>
+              </tr>
+              <tr>
+                <td>TIMBRE III</td>
+                <td>chosen timbre III</td>
+              </tr>
+              <tr>
+                <td>TIMBRE VARIETY</td>
+                <td>timbre variety within a page</td>
+              </tr>
+              <tr>
+                <td>LOW PITCH</td>
+                <td>notes in the register x <= E (329.63 Hz)</td>
+              </tr>
+              <tr>
+                <td>MIDDLE PITCH</td>
+                <td>notes in the register E (329.63 Hz) < x <=F (698.46 Hz)</td>
+              </tr>
+              <tr>
+                <td>HIGH PITCH</td>
+                <td>notes in the register x > F (698.46 Hz)</td>
+              </tr>
+              <tr>
+                <td>GRACE</td>
+                <td>grace notes</td>
+              </tr>
+              <tr>
+                <td>PITCH ALTER</td>
+                <td>glissando, vibrato</td>
+              </tr>
+              <tr>
+                <td>FLUTTER</td>
+                <td>flutter</td>
+              </tr>
+              <tr>
+                <td>LEGATO</td>
+                <td>legato</td>
+              </tr>
+              <tr>
+                <td>ACCENT</td>
+                <td>accent</td>
+              </tr>
+              <tr>
+                <td>P DYNAMIC</td>
+                <td>all p dynamics</td>
+              </tr>
+              <tr>
+                <td>M DYNAMIC</td>
+                <td>moderate dynamic</td>
+              </tr>
+              <tr>
+                <td>F DYNAMIC</td>
+                <td>all f dynamics</td>
+              </tr>
+              <tr>
+                <td>DIM - CRE</td>
+                <td>dminuendo, crescendo</td>
+              </tr>
+              <tr>
+                <td>SOMEWHAT</td>
+                <td>somewhat noisy: noise coloration</td>
+              </tr>
+              <tr>
+                <td>NOISY</td>
+                <td>noisy: noise coloration</td>
+              </tr>
+              <tr>
+                <td>VERY NOISY</td>
+                <td>very noisy: noise coloration</td>
+              </tr>
+              <tr>
+                <td>ACCEL</td>
+                <td>accellerando</td>
+              </tr>
+              <tr>
+                <td>RIT</td>
+                <td>ritardando</td>
+              </tr>
+              <tr>
+                <td>PERIOD</td>
+                <td>periodic</td>
+              </tr>
+              <tr>
+                <td>TONE</td>
+                <td>single tones or groups of notes in immediate proximity</td>
+              </tr>
+              <tr>
+                <td>GRUPPEN</td>
+                <td>groups of notes with pitch variety</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+            <strong>MATERIAL CHOOSER</strong>
+          </h4>
+          <p class="mbr-text mbr-fonts-style display-7">
+            The "Material Chooser" section is divided into three sections: Elements, Parts, and Systems. Each section displays the selected musical material, which is expressed through a number that is associated with the material itself. The charts
+            that provide the association between the material and its numeric label can be found in the SOLO_Score_Builder/pages_material/ folder.
+            <br>
+            <br>
+            The number next to each section represents the percentage of coherence with the comparison instructions provided by the Formschema. This number can be changed to adjust the selection of material to one's liking. To trigger the process,
+            you need to press the START button.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Image-->
+  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5">
+          <div class="image-wrapper">
+            <img src="https://www.gabrielavelitch.com/img/karlheinz_stockhausen_solo/solo_patch_2.webp" alt="www.gabrielavelitch.com">
+            <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Material chooser</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <p class="mbr-text mbr-fonts-style display-7">
+            Now that you've had a hint on how the patch works, you can follow the <a href="https://www.gabrielavelitch.com/pages/learn/karlheinz_stockhausen_solo/SOLO_score_builder_tutorial.html" target="_blank"><b>SOLO - Score Builder Tutorial</b></a> that will help you write your own version of Solo.
+            <br>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-->
+  <div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_footer.html"></div>
+
+
+  <section
+    style="display: none !important;background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a
+      href="https://mobirise.site/z" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a>
+    <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Site was <a href="https://mobirise.site/h" style="color:#aaa;">started with</a> Mobirise</p>
+
+
+    <script src="https://www.gabrielavelitch.com/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/parallax/jarallax.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/ytplayer/index.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/theme/js/script.js"></script>
+    <script>
+      includeHTML();
+    </script>
+
+</body>
+
+</html>
