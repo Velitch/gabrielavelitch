@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://www.gabrielavelitch.com/assets/images/favicon-96x96.png" type="image/x-icon">
+  <meta name="description" content="">
+
+
+  <title>Automotive Sound: An Overview </title>
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap">
+  </noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,500,600,700,400i,500i,600i,700i&display=swap">
+  </noscript>
+  <link rel="preload" as="style" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css">
+  <link rel="stylesheet" href="https://www.gabrielavelitch.com/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  <!-- include internals -->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
+
+<body>
+
+
+  <!-- Navbar-->
+  <div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_nav.html" target="_blank"></div>
+
+
+  <!-- Header-->
+  <section data-bs-version="5.1" class="info3 cid-sYzbPCvQ7r mbr-parallax-background" id="info3-1g">
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);">
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card col-12 col-lg-10">
+          <div class="card-wrapper">
+            <div class="card-box align-center">
+              <h4 class="card-title mbr-fonts-style align-center mb-4 display-2"><strong>AUTOMOTIVE IMMERSIVE SOUND</strong></h4>
+              <h3 class="card-title mbr-fonts-style align-center"><strong>An Overview</strong></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Index-->
+
+  <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="content5-29">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+            <br>
+            <br>
+            <strong>INDEX</strong>
+          </h4>
+          <p class="mbr-text mbr-fonts-style display-7">
+          <ul>
+            <li><a href="#abstract"><b>Abstract</b></a></li>
+            <li><a href="#soundscape_design_dev"><b>Soundscape Design Developement</b></a></li>
+            <ul>
+              <li><a href="#pre"><b>Pre. Project Strategy Design</b></a></li>
+              <ul>
+                <li><a href="#targets"><b>Definition of Automotive Sound Targets</b></a></li>
+                <li><a href="#ir"><b>Impulse Response Positions and Conditions</b></a></li>
+              </ul>
+              <li><a href="#stage1"><b>01. Acoustic Fingerprint of the Vehicle</b></a></li>
+              <ul>
+                <li><a href="#multi_rec_sol"><b>Multichannel Recording Solutions</b></a></li>
+                <li><a href="#anal_cabin"><b>Analysis of the Cabin Acoustic Environment</b></a></li>
+                <li><a href="#stat_desc"><b>Evaluation of the Statistical Descriptors</b></a></li>
+              </ul>
+              <li><a href="#stage2"><b>02. Studies over the Virtual Acoustic Environment</b></a></li>
+              <ul>
+                <li><a href="#setup_ve"><b>Setup of Virtual Environment</b></a></li>
+                <li><a href="#anal_cabin"><b>Analysis of the Target Sound Captures inside the Virtual Environment</b></a></li>
+                <li><a href="#synthesis"><b>Synthesis of Digital Sounds</b></a></li>
+                <li><a href="#rep_sys"><b>Combination and Tuning of Different Sound Reproduction Systems</b></a></li>
+                <li><a href="#global_tuning"><b>Global Tuning</b></a></li>
+              </ul>
+              <li><a href="#stage3"><b>03. In-situ Installation</b></a></li>
+              <ul>
+                <li><a href="#tests"><b>Tests</b></a></li>
+              </ul>
+              Safety & Security
+              Sensors & AI
+              Perceptive analysis because humans are synesthetics and work through complex cerebral maps that combine all the senses (ex: the visual helps to identify a moving source)
+
+              <li><a href="#appendix"><b>Appendix</b></a></li>
+              <li><a href="#biblio"><b>Bibliography</b></a></li>
+              <li><a href="#web"><b>Webography</b></a></li>
+            </ul>
+
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Title-->
+  <section data-bs-version="5.1" class="content4 cid-sYxSws07LF" id="abstract">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Abstract</strong></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="abstract_txt">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <p class="mbr-text mbr-fonts-style display-7">
+            The purpose of this handbook is to bring notions, tips and possible solutions litteraly to the hand of the sound engineers while approaching to the automotive immersive sound tuning.
+            This text is an historycal and technical summary of the most relevant articles, books, papers and general notions related to acoustics, sound engineering and sound design.
+            It will frequently refer to the material mentioned above; it's not a purpose of this book to leave the readers fully informed about all the touched topics, infact we will frequenctly redirect them to the original source for futher
+            studies.
+            On the other hand, this text will focus over results, solutions, conclusions and perspecives in order to give an immediate view of the state of arts and to provide a practical approach to the matter.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Title-->
+  <section data-bs-version="5.1" class="content4 cid-sYxSws07LF" id="soundscape_design_dev">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-md-12 col-lg-10">
+          <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Soundscape Design Developement</strong></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image-->
+  <section data-bs-version="5.1" class="image3 cid-t1AvF6Newe" id="image3-2l">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5">
+          <div class="image-wrapper">
+            <img src="https://www.gabrielavelitch.com/img/site/idea.webp" width="100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="features23 cid-tX2xYqQbjn" id="features23-c">
+    <div class="container">
+      <!-- col-12 col-md-6 col-lg-4 -->
+      <div class="row justify-content-center content-row mt-4">
+        <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+          <div class="card-box">
+            <div class="title">
+              <span class="num mbr-fonts-style display-1"><strong>Pre</strong></span>
+            </div>
+            <h4 class="card-title mbr-fonts-style display-5">
+              <strong>Project Strategy Design<br>
+                <br></strong>
+            </h4>
+            <p class="mbr-text card-text mbr-fonts-style display-7">
+            <ul>
+              <li>Definition of Automotive Sound Targets</li>
+              <li>Impulse Response Positions and Conditions</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+          <div class="card-box">
+            <div class="title">
+              <span class="num mbr-fonts-style display-1"><strong>01.</strong></span>
+            </div>
+            <h4 class="card-title mbr-fonts-style display-5">
+              <strong>Acoustic Fingerprint of the Vehicle</strong>
+            </h4>
+            <p class="mbr-text card-text mbr-fonts-style display-7">
+            <ul>
+              <li>Multichannel Recording Solutions</li>
+              <li>Analysis</li>
+              <li>Evaluation</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+          <div class="card-box">
+            <div class="title">
+              <span class="num mbr-fonts-style display-1"><strong>02.</strong></span>
+            </div>
+            <h4 class="card-title mbr-fonts-style display-5">
+              <strong>Studies over the Virtual Acoustic Environment</strong>
+            </h4>
+            <p class="mbr-text card-text mbr-fonts-style display-7">
+            <ul>
+              <li>Virtual Environment Implementation</li>
+              <li>Synthesis</li>
+              <li>Tuning</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+          <div class="card-box">
+            <div class="title">
+              <span class="num mbr-fonts-style display-1"><strong>03.</strong></span>
+            </div>
+            <h4 class="card-title mbr-fonts-style display-5">
+              <strong>In-situ Installation <br>
+                <br></strong>
+            </h4>
+            <p class="mbr-text card-text mbr-fonts-style display-7">
+            <ul>
+              <li>Tests</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="targets">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Definition of Automotive Sound Targets</h5>
+          <br>
+          <br>
+          <ul>
+            <li><b>Vehicle Acoustic environment:</b> impulse responses of the cabin</li>
+            <li><b>Vehicle Physical Sounds:</b> tier/road sound, aerodynamic noise</li>
+            <li><b>Vehicle Mechanical Sounds:</b> ICE engine noises, vehicle speed, throttle opening, gearswitch, air-conditioning, doors opening and other gadget sounds</li>
+            <li><b>Vehicle Electric Sounds:</b> EV engine noises, battery cooling</li>
+            <li><b>Vehicle External Sounds:</b> engine noises, tier/road</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="ir">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Impulse Response Capture</h5>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+            The frequency response allows to view both the module spectrum and the phase spectrum.
+            By obtaining the frequency response, we actually cut out all that part of the transfer function that concerns time, i.e. the transient of that system.
+            Therefore should be underline that the frequency response gives the behavior of the filter in stationary conditions,
+            i.e. when some time has passed and the system has settled.
+            <br>
+            <br>
+            Three approaches for the acousttic analysis are described:
+            <br>
+            <br>
+          <ul class="mbr-text mbr-fonts-style display-7">
+            <li><b>Modal:</b> method applies to simple systems such as string, pipe or wall.</li>
+            <li><b>Geometric:</b> the propagation of the acoustic field is treated as if it were governed by rays.
+              Could be usefull during the designing stage when the vehicle is still not available</li>
+            <li><b>Diffuse Field:</b> it is a statistical approach, the acoustic field is evaluated through the hypothesis that after some time from the initial conditions,
+              the energy has spread and distributed homogeneously throughout the space and therefore some quantities that describe the acoustic field in a macroscopic way.
+              Above the Schroeder frequency the statistical approach makes more sense as the field behaves in a diffuse manner.</li>
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="stage1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h3>Stage 1: Acoustic Fingerprint of the Vehicle</h3>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+            During the first stage of the soundscape design developement the engineers will capture all the usefull in-situ and open road sounds of the vehicle.
+            Specifing the targets of those captures is essential to guarantee a smooth and on focus study during the stage 2.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="multi_rec_sol">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Multichannel Recording Solutions</h5>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+            Multichannel solutions have been developed over the years that can be categorized in three approaches:
+            <br>
+            <br>
+          <ul class="mbr-text mbr-fonts-style display-7">
+            <li><b>Direct:</b> those methods are the most commonly used by sound engineers and consist in manually arranging microphones and loudspeakers based on heuristics. Those methods will not be further detailed here because microphone and
+              loudspeaker layouts are interdependent.</li>
+            <li><b>Non-parametric:</b> those methods usually use linear transformation such as ambisonic. Input channels are encoded in the spherical harmonic domain and can further be decoded on any loudspeaker configuration</li>
+            <li><b>Parametric:</b> those methods process microphone array signals in the time-frequency domain and estimate spatial parameters based on sound field models. Parametric techniques are mainly used in spatial audio coding because they
+              allow to downmix the recordings and achieve good perceptual reconstruction.</li>
+          </ul>
+          <p class="mbr-text mbr-fonts-style display-7">
+            Choosing which recording method to apply over each target is crucial.
+            A good soundscape capture is based over a mix and match of different recording methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="stage2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h3>Stage 2: Studies over the Virtual Acoustic environment</h3>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="anal_cabin">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Analysis of the Cabin Acoustic environment</h5>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+            The statistical analysis approach starts from the fact that the energy in a space is distributed ergotically, i.e. without particular internal organisations.
+            The description of an acoustic response in these terms uses quantities that summarize the space in a macroscopic way and define certain properties.
+            <br>
+            <br>
+            The ISO 3382 standards describe the measurement procedure, the instrumentation necessary for detection,
+            the number of measurement positions and the criterion for evaluating the collected data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="stat_desc">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Evaluation of the Statistical Descriptors</h5>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+          <ul class="mbr-text mbr-fonts-style display-7">
+            <li><b>RT60 (Reverberation time):</b> time required for the impulse response to decay by 60 dB.</li>
+            <li><b>T10, T20, T30:</b> similar to RT60 but with different times used to evaluate the homogeneity of the IR.</li>
+            <li><b>EDT (Early Decay Time):</b> reference time of the first reflections.</li>
+            <li><b>Schroeder Frequency:</b> frequency above which the statistical approach makes more sense as the field behaves in a diffuse manner.</li>
+            <li><b>ITDG (Initial Time Delay Gap):</b> delay time of the first reflection, i.e. the time between the direct sound and the first reflection.
+              Assuming of course that there is direct sound.
+              The optimal values ​​for the ITDG vary depending on the space.
+              Typically for speech, an ITDG of less than 50ms is preferred. Magic value for ITDG is around 30 ms.</li>
+            <li><b>Haas effect:</b> If the contributions to the direct sound arrive within 35 ms, therefore the ITDG is equal to or less than this value, all contents are integrated as part of the direct sound. These events are incorporated as the
+              same sound event. If the contributions arrive after an interval of about 80 ms, the uniformity of a sound is broken and we hear the echo.
+              This size is very important, because it is one of those parameters called intimacy.
+              Above a certain value we will have the sensation of a larger environment. From a qualitative point of view, it is important that the first reflections
+              come from the side walls to have a greater pleasantness of the space.
+              This is called lateral asymmetry or interaural coherence.</li>
+            <li><b>BR - Bass Ratio:</b> It expresses a relationship between reverberation times taken at specific frequencies.
+              This value gives us indications of the fullness of the sound in the medium-low register.
+              Typically the best rooms are those that have a BR between 1.2 and 1.25. (BR = RT(125Hz) + RT(250Hz) / RT(500Hz) + RT(1kHz))</li>
+            <li><b>Brilliance:</b> It has a similar definition to BR but on different frequencies. Brilliance = RT(500Hz) + RT(1kHz) / RT(2kHz) + RT(4kHz)
+              Brilliance and Bass Ratio describe the brightness of the environment on an acoustic level, i.e. how much medium-low and medium-high contribution there is.
+              These two parameters are obviously linked to the materials of the space. Very
+              smooth and rigid materials increase the Brilliance parameters, while wood contributes to BR.
+              Wood has the ability to preserve the medium-low region of the spectrum (depending on the essence and finish of the wood it changes a lot for
+              the resonator qualities). These two parameters are evaluated for acoustic adaptation works.</li>
+            <li><b>D50 (Definition):</b> ratio between useful energy and total energy.
+              The useful energy in this case ranges from 0 to 50 ms, while the total energy ranges from 0 to infinity. In the case of speech the D50 must be greater than 0.5.
+              In the first 50ms there must be at least half of the total energy for speech to be intelligible.</li>
+            <li><b>C50/C80 (Clarity):</b> they are defined as the ratio of useful energy to harmful energy. Now the measures are logarithmic.
+              They are used for the intelligibility of speech (C50) and music (C80). The C50 needs all articulations to be audible.
+              For music the C80 is fine as the articulations are slower than speech.
+              The level of intelligibility can be even lower than speech.
+              <a href="https://www.gabrielavelitch.com/pages/learn/acustica_degli_spazi_musicali/04_08_descrittori_statistici_relativi_all_energia.html"><b>Optimal values ​​for the C50 and C80</b></a>.
+            </li>
+            <li><b>Spatial Impression:</b> is one of the most important characteristics evaluated.
+              To have a correct sensation of spatiality, the ITDGs must not exceed 80 ms and must reach the listener from lateral directions, because this increases the perception of asymmetry of space. The intensity relationships between first
+              reflections and direct sound must respect the laws of the precedence effect (Haas effect).
+              From a frequency point of view, the most important frequency bands for the spatial impression are those with the octave band at 125 Hz (warm sound) and the part at 1000 Hz (opening band), which contributes to giving a spatial presence
+              of the sound, higher presence front. While the 125 Hz band helps create an enveloping sound, the band around 1000 Hz is linked to the feeling of openness of the sound. The impression of spatiality is closely linked to interaural
+              coherence. Low interaural coherence from a larger spatial environment. Asymmetric space = low interaural coherence.
+              We like symmetry from a spatial point of view, but from an acoustic point of view we don't like it very much. The more different the signals that reach the two ears, the more we seem to be in an open space.
+              There are several parameters for the coherence of the signal between two ears, including ITACC or inter aural cross correlation.
+              All these parameters are generally recorded with Dummy-Heads.</li>
+            <li><b>Center Time (ts):</b> This definition starts from the assumption that useful energy decays in the first 50/80 ms.
+              But not in all situations this data is the same.
+              Therefore another parameter is defined, namely the Center Time:
+              barycentric time of the response to the impulse, i.e. it is the time that separates 50% of the energy before an instant and after an instant,
+              therefore identifying half of an IR from the energetic point of view, therefore the time spent which, I have been in dress from 50% of the energy.
+              Smaller ts -> more compact IR -> energy on first reflections.
+              More right ts -> longer reverberation, energy spread on the diffuse part (tail).
+              An environment that is too dry is not perceived as comfortable, so it is good that a certain environment has a certain spatiality, although it is good that the contribution is concentrated at the beginning.
+            </li>
+            <li><b>Acoustic reinforcement (G[dB]):</b> measure of the acoustic amplification introduced through an amplification apparatus compared with the response of the environment to a sound source without amplification acoustics (similar to the
+              concept of transparent amplification, i.e. an attitude that depends on various factors).
+              The acoustic reinforcement index gives indications on an acoustic apparatus that you do not want to interfere too much with the natural source.
+              there is a standard that defines two possible measurement criteria for this acoustic reinforcement index: background noise and the energy that arrives from the amplified source in relation to the energy that arrives without
+              amplification at 10 meters away.
+              G >= -4dB for rooms intended for music; G >= +4dB for rooms intended for speech (intelligibility).</li>
+            <li><b>IACC (Inter Aural Cross Correlation):</b></li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Setup of Virtual environment</h5>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text-->
+  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+          <h5>Analysis of the Target Sound Captures inside the Virtual environment</h5>
+          <br>
+          <p class="mbr-text mbr-fonts-style display-7">
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text-->
+    <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-8">
+            <h5>Syntesis of Digital Sounds</h5>
+            <br>
+            <p class="mbr-text mbr-fonts-style display-7">
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text-->
+      <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-8">
+              <h5>Integration and Tuning of Different Sound Reproduction Systems</h5>
+              <br>
+              <p class="mbr-text mbr-fonts-style display-7">
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text-->
+        <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-8">
+                <h5>Global Tuning</h5>
+                <br>
+                <p class="mbr-text mbr-fonts-style display-7">
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text-->
+          <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="stage3">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-8">
+                  <h3>Stage 3: In-situ Installation</h3>
+                  <br>
+                  <p class="mbr-text mbr-fonts-style display-7">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Text-->
+          <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-8">
+                  <h5>Tests</h5>
+                  <br>
+                  <p class="mbr-text mbr-fonts-style display-7">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Appendix-->
+
+          <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="appendix">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    <strong>APPENDIX</strong>
+                  </h4>
+                  <p class="mbr-text mbr-fonts-style display-7">
+                  <ul>
+                    <li><a
+                        href="https://www.genelec.com/immersive-hub?https%3A%2F%2Fwww.genelec.com%2Fimmersive-hub%3Futm_source=google&utm_medium=cpc&utm_campaign=immersive_audio_hub&gad_source=1&gclid=Cj0KCQiA6vaqBhCbARIsACF9M6mEjSI_UHT6bI2E0eVQ-ODhwtf6aV0XGWvJ-1k20HHYQqiO4Uz737caAuZ-EALw_wcB#section-cmscontent_INSTANCE_rAmfFFB10rhh"
+                        target="_blank"><b>Immersive Audio Formats</b></a></li>
+                    <ul>
+                      <li><a href="https://www.dolby.com/technologies/dolby-atmos/"><b>Dolby Atmos</b></a></li>
+                      <li><a href="https://www.auro-3d.com"><b>Auro-3D</b></a></li>
+                      <li><a href="https://electronics.sony.com/360-reality-audio"><b>Sony 360 Reality Audio</b></a></li>
+                      <li><a href="https://mpegh.com"><b>MPEG-H 3D Audio</b></a></li>
+                      <li><a href="https://dts.com/dtsx/"><b>DTS:X</b></a></li>
+                      <li><a href="https://www.itu.int/pub/R-REP"><b>ITU-R and Pure Research</b></a></li>
+                      <li><a href="https://www.razer.com/thx-spatial-audio"><b>THX Spatial Audio</b></a></li>
+                    </ul>
+                    <li><a href="http://pcfarina.eng.unipr.it/Aurora/HOA_explicit_formulas.htm"><b>A. Farina - "Explicit Ambix formulas for High Order Ambisonics"</b></a></li>
+                    <li><a href="https://www.edmunds.com/glossary/"><b>Alphabetical Glossary of Automotive Terms</b></a></li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bibliografia-->
+
+          <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="biblio">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    <strong>BIBLIOGRAPHY</strong>
+                  </h4>
+                  <p class="mbr-text mbr-fonts-style display-7">
+                  <h5 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    <strong>Acoustic & Audio Engineering</strong>
+                  </h5>
+                  <ul>
+                    <li><a href="https://aes2.org/publications/"><i><b>Audio Engineering Society Publications</b></i></a></li>
+                    <li><a href="https://intothesoundfield.music.ox.ac.uk/technical-papers"><i><b>Michael Gerzon Techical Articles and Papers</b></i></a></li>
+                    <li><a href="https://gitlab.com/giuseppesilvi/metp"><i><b>G. Silvi - METP - "Musica Elettronica Tecnologia e Pensiero" (open-book, fist commit on 3rd November 2019)</b></i></a></li>
+                    <li><a href="https://www.ee.columbia.edu/~dpwe/papers/Chown71-moving.pdf"><i><b>1971, J. M. Chowning - "The Simulation of Moving Sound Sources"</b></i></a></li>
+                    <li><a href="https://monoskop.org/images/d/d4/Schafer_R_Murray_The_Soundscape_Our_Sonic_Environment_and_the_Tuning_of_the_World_1994.pdf"><i><b>1994, R. Murray Schafer - "The soundscape: Our sonic environment and the tuning of the
+                            world"</b></i></a></li>
+                    <li><a href="https://www.researchgate.net/publication/344006275_Spatial_Hearing_The_Psychophysics_of_Human_Sound_Localization"><i><b>1996, J. Blauert - "Spatial Hearing: The Psychophysics of Human Sound Localization"</b></i></a>
+                    </li>
+                    <li><a href="https://www.gabrielavelitch.com/downloads/acoustic/tesi_giordano.pdf"><i><b>1996, M. Giordano - "Modellazione e Simulazione del Campo Acustico in Cavità a Geometria e Caratteristiche Acustiche Variabili"</b></i></a>
+                    </li>
+                    <li><a href="http://www.asp.c.dendai.ac.jp/thesis/zTransfer-Function_Measurement_with_Sweeps_AES_2001443.PDF"><i><b>2001, S. Muller, P. Massarani - "Transfer-Function Measurement with Sweeps"</b></i></a></li>
+                    <li><a href="http://www.jtdweb.org/journal/2003/001_ando.pdf"><i><b>2003, Y. Ando - "Investigations on Cerebral Hemisphere Activities Related to Subjective Preference of the Sound Field"</b></i></a></li>
+                    <li><a href="https://www.researchgate.net/publication/237067964_Directional_Audio_Coding_in_Spatial_Sound_Reproduction_and_Stereo_Upmixing"><i><b>2006, V. Pulkki - "Directional Audio Coding in Spatial Sound Reproduction and Stereo
+                            Upmixing"</b></i></a></li>
+                    <li><a href="https://www.gabrielavelitch.com/downloads/acoustic/Master_Handbook_of_Acoustics_5th_Edition_(2009)_(Everest).pdf"><i><b>2009, F. A. Everest, K. C. Pohlmann - "Master Handbook of Acoustics"</b></i></a></li>
+                    <li><a href="https://www.gabrielavelitch.com/downloads/acoustic/acoustics-for-engineers-2nd_troy-lectures.pdf"><i><b>2009, J. Blauert, N. Xiang - "Acoustics for Engineers"</b></i></a></li>
+                    <li><a href="http://www.angelofarina.it/Public/Fisica-Tecnica-Ambientale-2015/Lez-07/Cap.1_AcusticaInEdilizia.pdf"><i><b>2015, A. Farina - "Principi Base di Acustica, capitolo 1"</b></i></a></li>
+                    <li><a href="https://www.researchgate.net/publication/317617940_Spatial_Audio_for_Soundscape_Design_Recording_and_Reproduction"><i><b>2017, J. Y. Hong, J. He, B. Lam, R. Gupta, W-S. Gan - "Spatial Audio for Soundscape Design:
+                            Recording and Reproduction"</b></i></a></li>
+                    <li><a href="https://ieeexplore.ieee.org/abstract/document/7911385/authors#authors"><i><b>2017, H. Hacihabiboglu, E. De Sena; Z. Cvetkovic, J. Johnston, J. O. Smith - "Perceptual Spatial Audio Recording, Simulation, and Rendering:
+                            An
+                            overview of spatial-audio techniques based on psychoacoustics"</b></i></a></li>
+                    <li><a href="https://www.gabrielavelitch.com/downloads/acoustic/zotter_frank_ambisonic_2019.pdf"><i><b>2019, F. Zotter, M. Frank - "Ambisonic, A Practical 3D Audio Theory for Recording, Studio Production, Sound Reinforcement, and
+                            Virtual Reality"</b></i></a></li>
+                    <li><a href="https://www.gabrielavelitch.com/pages/learn/acustica_degli_ambienti_musicali.html"><i><b>2021, M. Giordano, G. K. Velitchkova - "Acoustic of Musical environments"</b></i></a></li>
+                    <li><a href="https://www.gabrielavelitch.com/downloads/acoustic/Cafe_OTO_Acoustic_Analysis_of_the_Environment.pdf"><i><b>2022, G. K. Velitchkova - "Cafe OTO, Acoustic Analysis of the Environment"</b></i></a></li>
+                  </ul>
+                  <h5 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    <strong>Automotive</strong>
+                  </h5>
+                  <ul>
+                    <li><a href="http://pcfarina.eng.unipr.it/ASK/home.htm"><i><b>Angelo Farina - Applications of the Auralization technique to car audio systems</b></i></a></li>
+                    <li><a href="https://www.academia.edu/4958143/SUBJECTIVE_COMPARISON_BETWEEN_STEREO_DIPOLE_AND_3D_AMBISONIC_SURROUND_SYSTEMS_FOR_AUTOMOTIVE_APPLICATIONS"><i><b>1999, A. Farina, E. Ugolotti - "Subjective comparison between Stereo
+                            Dipole and
+                            3D
+                            Ambisonics surround systems for automotive applications"</b></i></a></li>
+                    <li><a href="http://www.conforg.fr/acoustics2008/cdrom/data/fa2005-budapest/paper/694-0.pdf"><i><b>2005, H. Hansen, R. Weber, U. Letens - "Quantifying tonal phonomena in interior car sounds"</b></i></a></li>
+                    <li><a href="https://www.academia.edu/22220504/Spatial_Audio_Quality_Evaluation_Comparing_Transaural_Ambisonics_and_Stereo"><i><b>2007, C. Guastavino, V. Larcher, G. Catusseau, P. Boussard - "Spatial Audio Quality Evaluation:
+                            Comparing
+                            Transaural, Ambisonics and Stereo"</b></i></a></li>
+                    <li><a href="https://hal.science/hal-00463369/document"><i><b>2009, J-F. Sciabica, M-C. Bezat, V. Roussarie, R. Kronland-Martinet, S. Ystad - "Towards the timbre modeling of interior car sound"</b></i></a></li>
+                    <li><a href="https://www.mdpi.com/2076-3298/5/4/44"><i><b>2017, Y. Soeta, Y. Sakamoto - "An Exploratory Analysis of Sound Field Characteristics using the Impulse Response in a Car Cabin"</b></i></a></li>
+                    <li><a href="https://hal.science/hal-03324608/document"><i><b>2019, S. Denjean, R. Kronland-Martinet, V. Roussarie, S. Ystad - "Zero-Emission Vehicles Sonification Strategy Based on Shepard-Risset Glissando"</b></i></a></li>
+                    <li><a href="https://hal.science/hal-03456711/file/I3DA_SpatialSoundDesign_DUPRE_FinalSubmission.pdf"><i><b>2021, T. Dupré, S. Denjean, M. Aramaki, R. Kronland-Martinet - "Spatial Sound Design in a Car Cockpit: Challenges and
+                            Perspectives"</b></i></a></li>
+                    <li><a href="http://pcfarina.eng.unipr.it/Public/I3DA-2021/Low_Frequency_Simulations_for_Ambisonics_Auralization_of_a_Car_Sound_System.pdf"><i><b>2021, A. Farina, D. Pinardi, J-S. Park - "Low Frequency Simulations for Ambisonics
+                            Auralization of
+                            a Car Sound System"</b></i></a></li>
+                    <li><a href="https://www.researchgate.net/publication/372442566_Analysis_by_synthesis_of_engine_sounds_for_the_design_of_dynamic_auditory_feedback_of_electric_vehicles"><i><b>2023, T. Dupré, S. Denjean, M. Aramaki, R.
+                            Kronland-Martinet -
+                            "Analysis by synthesis of engine sounds for the design of dynamic auditory feedback of electric vehicles"</b></i></a></li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Webografia-->
+
+          <section data-bs-version="5.1" class="content5 cid-sZjlSBcUZU" id="web">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    <strong>WEBOGRAPHY</strong>
+                  </h4>
+                  <p class="mbr-text mbr-fonts-style display-7">
+                  <h5 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    <strong>Automotive</strong>
+                  </h5>
+                  <ul>
+                    <li><a href="https://en-uk.sennheiser.com/ambeo-mobility"><i><b>Sennheiser AMBEO Mobility</b></i></a></li>
+                    <li><a href="https://professional.dolby.com/music/dolby-atmos-for-cars/"><i><b>Dolby Atmos for Cars</b></i></a></li>
+                    <li><a href="https://www.dirac.com/dirac-for-business/automotive/"><i><b>Dirac Automotive Audio</b></i></a></li>
+                    <li><a href="https://automotive.bose.com/road-ahead/active-sound-management#electric-vehicle-sound-enhancement"><i><b>Bose - Active Sound Management</b></i></a></li>
+                    <li><a href="https://www.idmt.fraunhofer.de/en/institute/projects-products/spatialsound-wave-automotive-audio.html"><i><b>Fraunhofer - Spatialsound Wave Automotive Audio</b></i></a></li>
+                    <li><a href="https://www.audiokinetic.com/en/solutions/automotive/"><i><b>AudioKinetic - Wwise Automotive</b></i></a></li>
+                    <li><a href="https://www.arkamys.com/solutions/smart-tuning/"><i><b>Arkamys - Smart Tuning, Automatized In-Vehicle Tuning System</b></i></a></li>
+                    <li><a href="https://corporate.bang-olufsen.com/it/partners/automotive"><i><b>Bang & OLufsen Automotive</b></i></a></li>
+                    <li><a href="https://news.lgdisplay.com/en/2022/11/lg-display-develops-invisible-speakers-for-automobiles/"><i><b>LG Display Develops ‘Invisible’ Speakers for Automobiles</b></i></a></li>
+                    <li><a href="https://audioxpress.com/article/automotive-audio-audio-objects-as-platform-technology-in-vehicles"><i><b>AudioExpress - Automotive Audio: Audio Objects as Platform Technology in Vehicles</b></i></a></li>
+                    <li><a href="https://www.vrtonung.de/en/automotive-audio-3d/"><i><b>VRTonung - New car sound technology with Automotive Audio and 3D speakers</b></i></a></li>
+                    <li><a href="https://www.asoundeffect.com/the-future-sound-of-cars/"><i><b>A Sound Effect - The Future Sound of Cars with Richard Devine: How Jaguar’s I-PACE is Redefining the Engine Sound</b></i></a></li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer-->
+          <div w3-include-html="https://www.gabrielavelitch.com/assets/internals/gkv_footer.html"></div>
+
+
+          <section
+            style="display: none !important;background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">
+            <a href="https://mobirise.site/z" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a>
+            <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Site was <a href="https://mobirise.site/h" style="color:#aaa;">started with</a> Mobirise</p>
+
+
+            <script src="https://www.gabrielavelitch.com/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/parallax/jarallax.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/smoothscroll/smooth-scroll.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/ytplayer/index.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/dropdown/js/navbar-dropdown.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+            <script src="https://www.gabrielavelitch.com/assets/theme/js/script.js"></script>
+            <script>
+              includeHTML();
+            </script>
+
+</body>
+
+</html>
