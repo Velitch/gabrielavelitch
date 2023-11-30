@@ -5807,7 +5807,7 @@ a {
     transition: all 0.3s;
     border-radius: 4px;
     padding: 1rem;
-    background: #ffffff;
+    background: #0e1c2b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5816,7 +5816,6 @@ a {
   .cid-tX6D4uUNCX1 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-image: url("https://www.gabrielavelitch.com/img/automotive_immersive_sound/bg_nebula2.webp");
   }
   .cid-tX6D4uUNCX1 .mbr-iconfont {
     display: block;
@@ -5829,7 +5828,7 @@ a {
     transition: all 0.3s;
     border-radius: 4px;
     padding: 1rem;
-    background: #ffffff;
+    background-image: url("https://www.gabrielavelitch.com/img/automotive_immersive_sound/bg_nebula2.webp");
     display: flex;
     justify-content: center;
     align-items: center;
