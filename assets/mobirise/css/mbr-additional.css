@@ -7112,3 +7112,50 @@ a {
   align-items: center;
   margin-bottom: 2rem;
 }
+.cid-tX8GD3rN6w {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-tX8GD3rN6w .video-wrapper iframe {
+  width: 100%;
+}
+.cid-tX8GD3rN6w .mbr-section-title,
+.cid-tX8GD3rN6w .mbr-description {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .cid-tX8GD3rN6w .text-wrapper {
+    padding: 2rem;
+  }
+}
+.cid-tX8Gfky3Og {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-tX8Gfky3Og .mbr-iconfont {
+  font-size: 1.4rem !important;
+  font-family: 'Poppins' !important;
+  color: #6592e6;
+  margin-left: 1rem;
+}
+.cid-tX8Gfky3Og .panel-group {
+  border: none;
+}
+.cid-tX8Gfky3Og .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-tX8Gfky3Og .panel-body,
+.cid-tX8Gfky3Og .card-header {
+  padding: 1rem 0;
+}
+.cid-tX8Gfky3Og .panel-title-edit {
+  color: #000000;
+}
+.cid-tX8Gfky3Og .card .card-header {
+  background-color: transparent;
+  margin-bottom: 0;
+}
