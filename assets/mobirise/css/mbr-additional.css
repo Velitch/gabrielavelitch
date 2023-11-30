@@ -5792,3 +5792,25 @@ a {
   .cid-tX6pWBCRXL .mbr-section-title {
     color: #ffffff;
   }
+  .cid-tX6D4uUNCX {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #0e1c2b;
+  }
+  .cid-tX6D4uUNCX .mbr-iconfont {
+    display: block;
+    font-size: 4rem;
+    color: #6592e6;
+    margin-bottom: 2rem;
+  }
+  .cid-tX6D4uUNCX .card-wrapper {
+    min-height: 220px;
+    transition: all 0.3s;
+    border-radius: 4px;
+    padding: 1rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
