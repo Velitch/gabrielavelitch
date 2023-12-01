@@ -526,6 +526,11 @@
   <!-- Accordion-->
   <section data-bs-version="5.1" class="content16 cid-tX8Gfky3Og" id="content16-n" style:"background-color: #fde5b1">
     <div class="container">
+      <div class="title col-md-12 col-lg-10"  style:"text-align: center">
+        <span>
+          <h4 style="color: #ffffff" class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-2"><strong>Evaluation of the Statistical Descriptors</strong></h4>
+        </span>
+      </div>
       <div class="row mt-8">
         <div class="col-12 col-md-6" style:"background-color: #ffffff">
           <h4 class="card-title mbr-fonts-style display-5" style:"text-align: center">
@@ -725,78 +730,6 @@
   </section>
 
 
-
-  <!-- Text-->
-  <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="stat_desc">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-8">
-          <h5>Evaluation of the Statistical Descriptors</h5>
-          <br>
-          <p class="mbr-text mbr-fonts-style display-7">
-          <ul class="mbr-text mbr-fonts-style display-7">
-            <li><b>RT60 (Reverberation time):</b> time required for the impulse response to decay by 60 dB.</li>
-            <li><b>T10, T20, T30:</b> similar to RT60 but with different times used to evaluate the homogeneity of the IR.</li>
-            <li><b>EDT (Early Decay Time):</b> reference time of the first reflections.</li>
-            <li><b>Schroeder Frequency:</b> frequency above which the statistical approach makes more sense as the field behaves in a diffuse manner.</li>
-            <li><b>ITDG (Initial Time Delay Gap):</b> delay time of the first reflection, i.e. the time between the direct sound and the first reflection.
-              Assuming of course that there is direct sound.
-              The optimal values ​​for the ITDG vary depending on the space.
-              Typically for speech, an ITDG of less than 50ms is preferred. Magic value for ITDG is around 30 ms.</li>
-            <li><b>Haas effect:</b> If the contributions to the direct sound arrive within 35 ms, therefore the ITDG is equal to or less than this value, all contents are integrated as part of the direct sound. These events are incorporated as the
-              same sound event. If the contributions arrive after an interval of about 80 ms, the uniformity of a sound is broken and we hear the echo.
-              This size is very important, because it is one of those parameters called intimacy.
-              Above a certain value we will have the sensation of a larger environment. From a qualitative point of view, it is important that the first reflections
-              come from the side walls to have a greater pleasantness of the space.
-              This is called lateral asymmetry or interaural coherence.</li>
-            <li><b>BR - Bass Ratio:</b> It expresses a relationship between reverberation times taken at specific frequencies.
-              This value gives us indications of the fullness of the sound in the medium-low register.
-              Typically the best rooms are those that have a BR between 1.2 and 1.25. (BR = RT(125Hz) + RT(250Hz) / RT(500Hz) + RT(1kHz))</li>
-            <li><b>Brilliance:</b> It has a similar definition to BR but on different frequencies. Brilliance = RT(500Hz) + RT(1kHz) / RT(2kHz) + RT(4kHz)
-              Brilliance and Bass Ratio describe the brightness of the environment on an acoustic level, i.e. how much medium-low and medium-high contribution there is.
-              These two parameters are obviously linked to the materials of the space. Very
-              smooth and rigid materials increase the Brilliance parameters, while wood contributes to BR.
-              Wood has the ability to preserve the medium-low region of the spectrum (depending on the essence and finish of the wood it changes a lot for
-              the resonator qualities). These two parameters are evaluated for acoustic adaptation works.</li>
-            <li><b>D50 (Definition):</b> ratio between useful energy and total energy.
-              The useful energy in this case ranges from 0 to 50 ms, while the total energy ranges from 0 to infinity. In the case of speech the D50 must be greater than 0.5.
-              In the first 50ms there must be at least half of the total energy for speech to be intelligible.</li>
-            <li><b>C50/C80 (Clarity):</b> they are defined as the ratio of useful energy to harmful energy. Now the measures are logarithmic.
-              They are used for the intelligibility of speech (C50) and music (C80). The C50 needs all articulations to be audible.
-              For music the C80 is fine as the articulations are slower than speech.
-              The level of intelligibility can be even lower than speech.
-              <a href="https://www.gabrielavelitch.com/pages/learn/acustica_degli_spazi_musicali/04_08_descrittori_statistici_relativi_all_energia.html"><b>Optimal values ​​for the C50 and C80</b></a>.
-            </li>
-            <li><b>Spatial Impression:</b> is one of the most important characteristics evaluated.
-              To have a correct sensation of spatiality, the ITDGs must not exceed 80 ms and must reach the listener from lateral directions, because this increases the perception of asymmetry of space. The intensity relationships between first
-              reflections and direct sound must respect the laws of the precedence effect (Haas effect).
-              From a frequency point of view, the most important frequency bands for the spatial impression are those with the octave band at 125 Hz (warm sound) and the part at 1000 Hz (opening band), which contributes to giving a spatial presence
-              of the sound, higher presence front. While the 125 Hz band helps create an enveloping sound, the band around 1000 Hz is linked to the feeling of openness of the sound. The impression of spatiality is closely linked to interaural
-              coherence. Low interaural coherence from a larger spatial environment. Asymmetric space = low interaural coherence.
-              We like symmetry from a spatial point of view, but from an acoustic point of view we don't like it very much. The more different the signals that reach the two ears, the more we seem to be in an open space.
-              There are several parameters for the coherence of the signal between two ears, including ITACC or inter aural cross correlation.
-              All these parameters are generally recorded with Dummy-Heads.</li>
-            <li><b>Center Time (ts):</b> This definition starts from the assumption that useful energy decays in the first 50/80 ms.
-              But not in all situations this data is the same.
-              Therefore another parameter is defined, namely the Center Time:
-              barycentric time of the response to the impulse, i.e. it is the time that separates 50% of the energy before an instant and after an instant,
-              therefore identifying half of an IR from the energetic point of view, therefore the time spent which, I have been in dress from 50% of the energy.
-              Smaller ts -> more compact IR -> energy on first reflections.
-              More right ts -> longer reverberation, energy spread on the diffuse part (tail).
-              An environment that is too dry is not perceived as comfortable, so it is good that a certain environment has a certain spatiality, although it is good that the contribution is concentrated at the beginning.
-            </li>
-            <li><b>Acoustic reinforcement (G[dB]):</b> measure of the acoustic amplification introduced through an amplification apparatus compared with the response of the environment to a sound source without amplification acoustics (similar to the
-              concept of transparent amplification, i.e. an attitude that depends on various factors).
-              The acoustic reinforcement index gives indications on an acoustic apparatus that you do not want to interfere too much with the natural source.
-              there is a standard that defines two possible measurement criteria for this acoustic reinforcement index: background noise and the energy that arrives from the amplified source in relation to the energy that arrives without
-              amplification at 10 meters away.
-              G >= -4dB for rooms intended for music; G >= +4dB for rooms intended for speech (intelligibility).</li>
-          </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Text-->
   <section data-bs-version="5.1" class="content5 cid-sYxSPQpamM" id="setup_ve">
