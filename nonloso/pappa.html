@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://www.gabrielavelitch.com/assets/images/favicon-96x96.png" type="image/x-icon">
+  <meta name="description" content="">
+
+    <!-- include internals -->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
+
+<body>
+
+    <p>La pappa che piace tanto a Gab:
+        <ul>
+            <li>Spaghetti alle vongole</li>
+            <li>Lasagna</li>
+            <li>Peperoni aglio olio e aceto</li>
+            <li>Brodo di gallina con riso</li>
+            <li>Risotto con spinaci e mozzarella</li>
+            <li>Millefoglie alla crema</li>
+            <li>Involtini di carne e mortadella al sugo</li>
+            <li></li>
+            <li></li>
+            </ul>
+</p>
+    <br><br>
+    <br><br>
+    <p><i>Fluido, in continua espansione</i></p>
+      
+      
+      <section
+    style="display: none !important;background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a
+      href="https://mobirise.site/z" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a>
+    <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Site was <a href="https://mobirise.site/h" style="color:#aaa;">started with</a> Mobirise</p>
+
+
+    <script src="https://www.gabrielavelitch.com/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/parallax/jarallax.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/ytplayer/index.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+    <script src="https://www.gabrielavelitch.com/assets/theme/js/script.js"></script>
+    <script>
+    <script>
+      includeHTML();
+    </script>
+
+</body>
+
+</html>
